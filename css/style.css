@@ -500,6 +500,9 @@ h3 {
   .section_title {
     margin-bottom: 25px;
   }
+  #map {
+    height: 200px; /* Establece una altura más pequeña para dispositivos móviles */
+}
 }
 
 /* line 9, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_section_title.scss */
@@ -589,6 +592,14 @@ h3 {
     z-index: 9;
   }
 }
+
+@media (max-width: 580px) {
+  #map {
+    height: 200px; /* Ajusta la altura del mapa para dispositivos móviles */
+    width: 200%; /* Haz que el mapa ocupe todo el ancho disponible */
+  }
+}
+
 
 /* line 13, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
@@ -1935,7 +1946,7 @@ h3 {
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area #map {
-  height: 800px !important;
+  height: 800px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
