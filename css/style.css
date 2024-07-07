@@ -2023,6 +2023,34 @@ h3 {
   font-weight: 400;
 }
 
+/* Asegura que el contenedor del logo ocupe el espacio completo y centre el contenido */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%;
+  padding: 20px 0; /* Espaciado alrededor del logo */
+  margin-bottom: -10px; /* Ajuste para reducir el espacio entre logo y el siguiente contenido */
+}
+
+/* Hace que el logo sea responsivo */
+.responsive-logo {
+  max-width: 100%; /* No excede el ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  max-height: 40vh; /* Ajusta según sea necesario */
+}
+@media (max-width: 768px) {
+  /* Ajustes para dispositivos más pequeños si es necesario */
+  .logo-container {
+      padding: 10px 0; /* Reducir el espaciado alrededor del logo */
+      margin-bottom: -5px; /* Ajuste para reducir el espacio entre logo y el siguiente contenido */
+  }
+  .responsive-logo {
+      max-height: 25vh; /* Tamaño más grande para tablets y móviles */
+  }
+}
+
+
 /* line 50, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area .location_info .location_inner p span {
   color: #99ac9c;

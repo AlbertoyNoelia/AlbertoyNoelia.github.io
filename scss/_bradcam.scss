@@ -1,61 +1,75 @@
-.bradcam_bg{
+// Definición de variables para los diferentes tamaños de dispositivos
+$mobile_device: "(max-width: 576px)";
+$tablet_device: "(max-width: 992px)";
+$mid_device: "(max-width: 1200px)";
+
+.bradcam_bg {
     background-image: url(../img/banner/bradcam.png);
 }
-.bradcam_bg_2{
+
+.bradcam_bg_2 {
     background-image: url(../img/banner/bradcam2.png);
 }
 
-
-.bradcam_area{
-    padding: 198px 0;
+.bradcam_area {
+    padding: 80px 0; /* Reducido el padding superior e inferior */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 0 50px;
+    margin: 0 auto; /* Centrado horizontal del contenido */
+    max-width: 1200px; /* Establecer un ancho máximo para evitar que el área sea demasiado ancha */
+
     @media #{$mobile_device} {
-        padding: 100px 0;
-        margin: 0 0px;
+        padding: 60px 0; /* Ajustes de padding para dispositivos móviles */
     }
-    @media #{$tablet_device}{
-        margin: 0 20px;
-    }
-    @media #{$mid_device}{
-        margin: 0 50px;
-    }
-    .bradcam_text{
-        h3{
-            font-size: 80px;
+
+    .bradcam_text {
+        text-align: center; /* Centrado del texto */
+
+        h3 {
+            font-size: 3.5vw; /* Tamaño de fuente responsivo */
             font-weight: 400;
             color: #C78665;
+
             @media #{$mobile_device} {
-                font-size: 40px;
+                font-size: 28px; /* Tamaño de fuente para móviles */
             }
-            @media #{$tablet_device} {
-                font-size: 45px;
+        }
+
+        h5 {
+            font-size: 2vw; /* Tamaño de fuente responsivo */
+
+            @media #{$mobile_device} {
+                font-size: 16px; /* Tamaño de fuente para móviles */
             }
         }
     }
 }
 
-// accommodation_area 
-.accommodation_area{
+.accommodation_area {
     padding-top: 150px;
+
     @media #{$mobile_device} {
         padding-top: 50px;
     }
+
     @media #{$tablet_device} {
         padding-top: 80px;
     }
-    .accommondation_image{
+
+    .accommondation_image {
         margin: 4px !important;
+
         img {
             width: 100%;
         }
     }
-    h3{
+
+    h3 {
         margin-bottom: 14px;
     }
-    p{
+
+    p {
         font-family: $font1;
     }
 }
