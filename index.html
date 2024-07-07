@@ -430,6 +430,7 @@
 		var audio = document.getElementById("myAudio");
 
 		function togglePlay() {
+			window.scrollTo({ top: 0});
 			if (audio.paused) {
 				audio.play();
 			} else {
