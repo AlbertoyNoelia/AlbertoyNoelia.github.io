@@ -28,7 +28,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
-
 <body>
 	<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -93,37 +92,6 @@
 </footer>
 
 <!-- footer_end --><!-- JS here -->
-		<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/isotope.pkgd.min.js"></script>
-		<script src="js/ajax-form.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/jquery.counterup.min.js"></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/scrollIt.js"></script>
-		<script src="js/jquery.scrollUp.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/nice-select.min.js"></script>
-		<script src="js/jquery.slicknav.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/plugins.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-
-
-
-		<!--contact js-->
-		<script src="js/contact.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/jquery.form.js"></script>
-		<script src="js/jquery.validate.min.js"></script>
-		<script src="js/mail-script.js"></script>
-		<script src="js/button.js"></script>
-		<script src="js/main.js"></script>
-
 	</div>
 
 	<div id="slide2" style="display: none;">
@@ -181,7 +149,33 @@
 			</div>
 		</div>
 		<!--/ slider_area -->
-
+<!-- wedding_countdown -->
+<div class="weeding_countdown_area">
+	<div class="flowaers_top d-none d-lg-block">
+		<img src="img/banner/flower-top.png" alt="">
+	</div>
+	<div class="flowaers_bottom d-none d-lg-block">
+			<img src="img/banner/flower-bottom.png" alt="">
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="section_title text-center">
+					<img src="img/banner/flowers.png" alt="">
+					<span>14. January. 2020</span>
+					<h3>THE. WEDDING. Countdown</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-12">
+				<div id="clock" class="countdown_area counter_bg ">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ wedding_countdown -->
 		<!-- our_love-story -->
 		<div class="love_story_area">
 			<div class="container">
@@ -425,7 +419,45 @@
 <!-- footer_end -->
 
 	</div>
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/ajax-form.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/scrollIt.js"></script>
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/nice-select.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/plugins.js"></script>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+
+
+		<!--contact js-->
+		<script src="js/contact.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.form.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/mail-script.js"></script>
+		<script src="js/button.js"></script>
+		<script src="js/main.js"></script>
+
+		
+		<script>
+$('#clock').countdown('2025/01/07', function (event) {
+    $(this).html(event.strftime(
+        '<div class="countdown_wrap d-flex"><div class="single_countdown"><h3>%D</h3><span>Days</span></div><div class="single_countdown"><h3>%H</h3><span>Hours</span></div><div class="single_countdown"><h3>%M</h3><span>Minutes</span></div><div class="single_countdown"><h3>%S</h3><span>Seconds</span></div></div>'
+    ));
+});
+
+		</script>
 	<script>
 		var audio = document.getElementById("myAudio");
 		audio.volume = 0.5;
