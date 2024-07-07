@@ -769,21 +769,28 @@ h3 {
   }
 }
 
-@media (max-width: 767px) {
+/* Estilos para el contenedor del logo */
+.logo-img {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Ajusta la altura según el contenido */
+}
 
-  /* line 30, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_header.scss */
-  .header-area .main-header-area .logo-img img {
-    width: 120px;
+/* Estilos para el logo */
+.logo-img img {
+  max-width: 100%; /* Ajusta el ancho máximo del logo */
+  height: auto; /* Mantiene la proporción */
+  max-height: 300px; /* Tamaño máximo del logo para dispositivos grandes */
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para dispositivos móviles y tablets */
+  .logo-img img {
+      max-height: 200px; /* Tamaño máximo del logo para dispositivos más pequeños */
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-  /* line 30, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_header.scss */
-  .header-area .main-header-area .logo-img img {
-    width: 120px;
-  }
-}
 
 /* line 40, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu {
@@ -2023,32 +2030,34 @@ h3 {
   font-weight: 400;
 }
 
-/* Asegura que el contenedor del logo ocupe el espacio completo y centre el contenido */
 .logo-container {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   width: 100%;
   padding: 20px 0; /* Espaciado alrededor del logo */
-  margin-bottom: -10px; /* Ajuste para reducir el espacio entre logo y el siguiente contenido */
+  margin-bottom: -10px; /* Ajuste para reducir el espacio entre el logo y el siguiente contenido */
 }
 
 /* Hace que el logo sea responsivo */
 .responsive-logo {
   max-width: 100%; /* No excede el ancho del contenedor */
   height: auto; /* Mantiene la proporción */
-  max-height: 40vh; /* Ajusta según sea necesario */
+  max-height: 80px; /* Tamaño máximo del logo */
 }
-@media (max-width: 768px) {
-  /* Ajustes para dispositivos más pequeños si es necesario */
+
+@media (max-width: 350px) {
+  /* Ajustes para dispositivos más pequeños */
   .logo-container {
-      padding: 10px 0; /* Reducir el espaciado alrededor del logo */
-      margin-bottom: -5px; /* Ajuste para reducir el espacio entre logo y el siguiente contenido */
+    padding: 10px 0; /* Reducir el espaciado alrededor del logo */
+    margin-bottom: -5px; /* Ajuste para reducir el espacio entre el logo y el siguiente contenido */
   }
   .responsive-logo {
-      max-height: 25vh; /* Tamaño más grande para tablets y móviles */
+    max-height: 60px; /* Tamaño máximo del logo para tablets y móviles */
   }
 }
+
+
 
 
 /* line 50, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
@@ -2163,8 +2172,8 @@ h3 {
 
 /* line 9, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
 .bradcam_area {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 50px;

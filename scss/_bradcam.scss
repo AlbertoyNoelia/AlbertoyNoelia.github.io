@@ -12,16 +12,12 @@ $mid_device: "(max-width: 1200px)";
 }
 
 .bradcam_area {
-    padding: 10px; /* Eliminar todo el padding */
+    padding: 0; /* Eliminar todo el padding */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     margin: 0 auto; /* Centrado horizontal del contenido */
     max-width: 1200px; /* Establecer un ancho máximo para evitar que el área sea demasiado ancha */
-
-    @media #{$mobile_device} {
-        /* No se requieren ajustes adicionales para dispositivos móviles */
-    }
 
     .bradcam_text {
         text-align: center; /* Centrado del texto */
@@ -30,31 +26,38 @@ $mid_device: "(max-width: 1200px)";
             font-size: 3.5vw; /* Tamaño de fuente responsivo */
             font-weight: 400;
             color: #C78665;
+            margin-bottom: 10px; /* Espaciado inferior */
 
             @media #{$mobile_device} {
-                font-size: 28px; /* Tamaño de fuente para móviles */
+                font-size: 6vw; /* Tamaño de fuente para dispositivos móviles */
             }
         }
 
         h5 {
-            font-size: 2vw; /* Tamaño de fuente responsivo */
+            font-size: 2.5vw; /* Tamaño de fuente responsivo */
+            color: #C78665;
+            margin-bottom: 0; /* Eliminar el margen inferior */
 
             @media #{$mobile_device} {
-                font-size: 16px; /* Tamaño de fuente para móviles */
+                font-size: 4.5vw; /* Tamaño de fuente para dispositivos móviles */
             }
         }
+    }
+
+    @media #{$mobile_device} {
+        /* Ajustes adicionales para dispositivos móviles si es necesario */
     }
 }
 
 .accommodation_area {
-    padding-top: 10x;
+    padding-top: 150px;
 
     @media #{$mobile_device} {
-        padding-top: 10x;
+        padding-top: 50px;
     }
 
     @media #{$tablet_device} {
-        padding-top: 10x;
+        padding-top: 80px;
     }
 
     .accommondation_image {
