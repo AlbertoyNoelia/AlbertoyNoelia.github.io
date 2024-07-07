@@ -12,7 +12,7 @@ $mid_device: "(max-width: 1200px)";
 }
 
 .bradcam_area {
-    padding: 80px 0; /* Reducido el padding superior e inferior */
+    padding: 10px; /* Eliminar todo el padding */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ $mid_device: "(max-width: 1200px)";
     max-width: 1200px; /* Establecer un ancho máximo para evitar que el área sea demasiado ancha */
 
     @media #{$mobile_device} {
-        padding: 60px 0; /* Ajustes de padding para dispositivos móviles */
+        /* No se requieren ajustes adicionales para dispositivos móviles */
     }
 
     .bradcam_text {
@@ -47,14 +47,14 @@ $mid_device: "(max-width: 1200px)";
 }
 
 .accommodation_area {
-    padding-top: 150px;
+    padding-top: 10x;
 
     @media #{$mobile_device} {
-        padding-top: 50px;
+        padding-top: 10x;
     }
 
     @media #{$tablet_device} {
-        padding-top: 80px;
+        padding-top: 10x;
     }
 
     .accommondation_image {

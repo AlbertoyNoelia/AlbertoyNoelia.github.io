@@ -2163,7 +2163,8 @@ h3 {
 
 /* line 9, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
 .bradcam_area {
-  padding: 198px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 50px;
