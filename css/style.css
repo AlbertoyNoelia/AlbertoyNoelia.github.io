@@ -2175,6 +2175,22 @@ h3 {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+.bradcam_text {
+  text-align: center; /* Centrado del texto */
+
+  h3 {
+      font-size: 2vw; /* Tamaño de fuente responsivo */
+      font-weight: 400;
+      margin-bottom: 10px; /* Espaciado inferior */
+  }
+
+  h5 {
+      font-size: 1vw; /* Tamaño de fuente responsivo */
+      margin-bottom: 0; /* Eliminar el margen inferior */
+
+  }
+}
+
 
 @media (max-width: 767px) {
 
@@ -2182,6 +2198,21 @@ h3 {
   .bradcam_area {
     padding: 100px 0;
     margin: 0 0px;
+  }
+  .bradcam_text {
+    text-align: center; /* Centrado del texto */
+  
+    h3 {
+        font-size: 5vw; /* Tamaño de fuente responsivo */
+        font-weight: 400;
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+  
+    h5 {
+        font-size: 4vw; /* Tamaño de fuente responsivo */
+        margin-bottom: 0; /* Eliminar el margen inferior */
+  
+    }
   }
 }
 
@@ -2191,6 +2222,21 @@ h3 {
   .bradcam_area {
     margin: 0 20px;
   }
+  .bradcam_text {
+    text-align: center; /* Centrado del texto */
+  
+    h3 {
+        font-size: 5vw; /* Tamaño de fuente responsivo */
+        font-weight: 400;
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+  
+    h5 {
+        font-size: 4vw; /* Tamaño de fuente responsivo */
+        margin-bottom: 0; /* Eliminar el margen inferior */
+  
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2198,6 +2244,21 @@ h3 {
   /* line 9, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
   .bradcam_area {
     margin: 0 50px;
+  }
+  .bradcam_text {
+    text-align: center; /* Centrado del texto */
+  
+    h3 {
+        font-size: 5vw; /* Tamaño de fuente responsivo */
+        font-weight: 400;
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+  
+    h5 {
+        font-size: 4vw; /* Tamaño de fuente responsivo */
+        margin-bottom: 0; /* Eliminar el margen inferior */
+  
+    }
   }
 }
 
