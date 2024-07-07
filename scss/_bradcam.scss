@@ -12,11 +12,11 @@ $mid_device: "(max-width: 1200px)";
 }
 
 .bradcam_area {
-    padding: 0; /* Eliminar todo el padding */
+    padding-top: 75px;
+    padding-bottom: 75px;
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
-    margin: 0 auto; /* Centrado horizontal del contenido */
+    margin: 0 50px;
     max-width: 1200px; /* Establecer un ancho máximo para evitar que el área sea demasiado ancha */
 
     .bradcam_text {

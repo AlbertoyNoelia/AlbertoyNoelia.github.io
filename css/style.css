@@ -2174,9 +2174,6 @@ h3 {
 .bradcam_area {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 50px;
 }
 
 @media (max-width: 767px) {
@@ -2206,25 +2203,8 @@ h3 {
 
 /* line 26, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
 .bradcam_area .bradcam_text h3 {
-  font-size: 80px;
   font-weight: 400;
   color: #99ac9c;
-}
-
-@media (max-width: 767px) {
-
-  /* line 26, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
-  .bradcam_area .bradcam_text h3 {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-  /* line 26, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
-  .bradcam_area .bradcam_text h3 {
-    font-size: 45px;
-  }
 }
 
 /* line 41, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_bradcam.scss */
