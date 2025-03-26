@@ -26,6 +26,7 @@ body {
   font-weight: normal;
   font-style: normal;
   overflow-x: hidden;
+  /*background-image: url('img\hobbit.jpg');*/
 }
 
 /* line 15, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/theme-default.scss */
@@ -1414,17 +1415,17 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_bg_1 {
-  background-image: url(../img/program_details/1.png);
+  background-image: url(../img/program_details/1.jpg);
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_bg_2 {
-  background-image: url(../img/program_details/2.png);
+  background-image: url(../img/program_details/2.jpg);
 }
 
 /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_bg_3 {
-  background-image: url(../img/program_details/3.png);
+  background-image: url(../img/program_details/3.jpg);
 }
 
 /* line 10, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1443,7 +1444,7 @@ h3 {
 
 /* line 18, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_details_area .single_program .program_inner {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   padding: 57px 30px;
 }
 
