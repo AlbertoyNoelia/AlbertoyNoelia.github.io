@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- <link rel="manifest" href="site.webmanifest"> -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<!-- Place favicon.ico in the root directory -->
@@ -99,88 +98,92 @@
 		<!-- header-->
 		<header>
 			<div class="header-area">
-				
-					<div class="container">
-						<div class="row align-items-center">
-							<!-- Logo que se moverá a la izquierda -->
-							<div class="col-xl-3 col-lg-3 d-flex justify-content-start">
-								<div class="logo-img">
-									<a href="index.html">
-										<img src="img/logo.png" alt="" width="100">
-									</a>
-								</div>
-							</div>
-							<!-- Menú móvil -->
-							<div class="col-12">
-								<div class="mobile_menu d-block d-lg-none"></div>
+
+				<div class="container">
+					<div class="row align-items-center">
+						<!-- Logo que se moverá a la izquierda -->
+						<div class="col-xl-3 col-lg-3 d-flex justify-content-start">
+							<div class="logo-img">
+								<a href="index.html">
+									<img src="img/logo.png" alt="" width="100">
+								</a>
 							</div>
 						</div>
+						<!-- Menú móvil -->
+						<div class="col-12">
+							<div class="mobile_menu d-block d-lg-none"></div>
+						</div>
 					</div>
-				
+				</div>
+
 			</div>
 		</header>
-		
-		<style>
-		/* Aseguramos que el logo se alinee a la izquierda */
-		.header-area .container .row {
-			display: flex;
-			justify-content: flex-start;  /* Mueve todo el contenido a la izquierda */
-		}
-		
-		/* Si necesitas más control en pantallas pequeñas */
-		@media (max-width: 767px) {
-			.header-area .container .row {
-				justify-content: flex-start;  /* Mueve todo a la izquierda en pantallas pequeñas también */
-			}
-		}
-		
-		/* Si necesitas un pequeño ajuste, puedes usar margen */
-		.logo-img {
-    margin-left: 0; /* Ajusta este valor si necesitas mover el logo más a la izquierda */
-    margin-top: 0px; /* Ajusta este valor según cuánto desees moverlo hacia arriba */
-}
-		</style>
-		
-		
-	<br>
-		<!--/ header-->
-<!-- Galería de Imágenes -->
-<div class="gallery_container">
-    <div class="gallery_slider">
-        <img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1">
-        <img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2">
-        <img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3">
-        <img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4">
-		<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5">
-    </div>
-	 <!-- Indicadores -->
-	 <div class="gallery_indicators">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<br>
 
-<!-- Audio section -->
-<div style="display: grid; place-items: center; height: 80px;">
-	<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
-</div>
+		<style>
+			/* Aseguramos que el logo se alinee a la izquierda */
+			.header-area .container .row {
+				display: flex;
+				justify-content: flex-start;
+				/* Mueve todo el contenido a la izquierda */
+			}
+
+			/* Si necesitas más control en pantallas pequeñas */
+			@media (max-width: 767px) {
+				.header-area .container .row {
+					justify-content: flex-start;
+					/* Mueve todo a la izquierda en pantallas pequeñas también */
+				}
+			}
+
+			/* Si necesitas un pequeño ajuste, puedes usar margen */
+			.logo-img {
+				margin-left: 0;
+				/* Ajusta este valor si necesitas mover el logo más a la izquierda */
+				margin-top: 0px;
+				/* Ajusta este valor según cuánto desees moverlo hacia arriba */
+			}
+		</style>
+
+
+		<br>
+		<!--/ header-->
+		<!-- Galería de Imágenes -->
+		<div class="gallery_container">
+			<div class="gallery_slider">
+				<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1">
+				<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2">
+				<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3">
+				<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4">
+				<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5">
+			</div>
+			<!-- Indicadores -->
+			<div class="gallery_indicators">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<!-- Audio section -->
+		<div style="display: grid; place-items: center; height: 80px;">
+			<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
+		</div>
 		<!-- wedding_countdown -->
 		<div class="weeding_countdown_area">
-		
+
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="section_title text-center">
-						
+
 							<span>27 de Septiembre de 2025</span>
-					
+
 						</div>
 					</div>
 				</div>
@@ -192,29 +195,31 @@
 				</div>
 			</div>
 		</div>
-		
 
-<!-- Frase especial después de la cuenta atrás -->
-<div class="special_phrase_area">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12 text-center">
-				<div class="special_phrase_box">
-					<p class="special_phrase">"En este día tan especial, comeremos como enanos, bebemos como elfos, y celebraremos el amor como lo harían los hobbits, rodeados de amigos y familia"</p>
+
+		<!-- Frase especial después de la cuenta atrás -->
+		<div class="special_phrase_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 text-center">
+						<div class="special_phrase_box">
+							<p class="special_phrase">"En este día tan especial, comeremos como enanos, bebemos como
+								elfos, y celebraremos el amor como lo harían los hobbits, rodeados de amigos y familia"
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
 		<!--/ wedding_countdown -->
-				
+
 		<!-- our_love-story -->
 		<div class="love_story_area">
 			<div class="container">
 				<div class="row">
-					 <!-- Columna izquierda con foto -->
-					 <div class="col-xl-4 col-md-6 col-lg-4">
+					<!-- Columna izquierda con foto -->
+					<div class="col-xl-4 col-md-6 col-lg-4">
 						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid">
 						<img src="img/gallery/8.jpg" alt="Foto de nosotros 1" class="img-fluid">
 						<img src="img/gallery/9.jpg" alt="Foto de nosotros 1" class="img-fluid">
@@ -223,23 +228,28 @@
 						<div class="weding_time_line text-center">
 							<div class="single_time_line">
 								<h3>El comienzo de nuestra historia</h3>
-								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la mano</p>
+								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos
+									que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la
+									mano</p>
 							</div>
 							<div class="single_time_line">
 								<h3>Nuestro hogar</h3>
-								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos construido un hogar lleno de amor, risas y momentos que quedarán para siempre en nuestros corazones</p>
+								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos
+									construido un hogar lleno de amor, risas y momentos que quedarán para siempre en
+									nuestros corazones</p>
 							</div>
 							<div class="single_time_line">
 								<h3>Las pedidas de mano</h3>
-								<p>Después de 6 años juntos, Alberto pidió la mano a Noelia en Florencia, y en un giro inesperado, también Noelia se lo pidió a él</p>
+								<p>Después de 6 años juntos, Alberto pidió la mano a Noelia en Florencia, y en un giro
+									inesperado, también Noelia se lo pidió a él</p>
 							</div>
 							<div class="single_time_line">
 								<h3>El gran día</h3>
 							</div>
 						</div>
 					</div>
-					  <!-- Columna derecha con foto -->
-					  <div class="col-xl-4 col-lg-4">
+					<!-- Columna derecha con foto -->
+					<div class="col-xl-4 col-lg-4">
 						<img src="img/gallery/7.jpg" alt="Foto de nosotros 1" class="img-fluid">
 						<img src="img/gallery/10.jpg" alt="Foto de nosotros 1" class="img-fluid">
 					</div>
@@ -315,38 +325,67 @@
 										<div class="popup_inner">
 											<div class="form_heading text-center">
 												<h3>¿Vas a poder asistir?</h3>
-												<p>Por favor, especifica el número de acompañantes y si cogerás el bus que facilitaremos desde Talavera de la Reina.</p>
+												<p>Por favor, especifica el número de acompañantes y si cogerás el bus
+													que facilitaremos desde Talavera de la Reina.</p>
 											</div>
-											<form action="#">
+											<form id="attendanceForm">
 												<div class="row">
+
+													<!-- Campo para el nombre -->
 													<div class="col-xl-12">
-														<input type="text" placeholder="Tu nombre">
+														<label for="name">Tu nombre:</label>
+														<input type="text" id="name" placeholder="Introduce tu nombre"
+															required>
 													</div>
+
+													<!-- Selección del número de acompañantes -->
 													<div class="col-xl-12">
-														<select class="form-select wide" id="default-select" class="">
-															<option data-display="Sin acompañantes">Sin acompañantes</option>
-															<option value="1 Acompañante">1 Acompañante</option>
-															<option value="2 Acompañantes">2 Acompañantes</option>
-															<option value="3 Acompañantes">3 Acompañantes</option>
-															<option value="4 Acompañantes">4 Acompañantes</option>
-															<option value="5 Acompañantes">5 Acompañantes</option>
-															<option value="Otros">Otros (especificar más abajo)</option>
-													
+														<label for="companions">Número de acompañantes:</label>
+														<select class="form-select wide" id="companions" required>
+															<option value="" disabled selected>Selecciona una opción
+															</option>
+															<option value="0">Sin acompañantes</option>
+															<option value="1">1 Acompañante</option>
+															<option value="2">2 Acompañantes</option>
+															<option value="3">3 Acompañantes</option>
+															<option value="4">4 Acompañantes</option>
+															<option value="5">5 Acompañantes</option>
 														</select>
 													</div>
+
+													<!-- Contenedor dinámico para nombres de acompañantes -->
+													<div class="col-xl-12" id="companionsNamesContainer"></div>
+
+													<!-- Selección sobre el bus -->
 													<div class="col-xl-12">
-														<select class="form-select wide" id="default-select" class="">
-															<option data-display="Cogeré el bus desde Talavera">Cogeré el bus desde Talavera</option>
+														<label for="bus">¿Cogerás el bus desde Talavera?</label>
+														<select class="form-select wide" id="bus" required>
+															<option value="" disabled selected>Selecciona una opción
+															</option>
+															<option value="Cogeré el bus desde Talavera">Cogeré el bus
+																desde Talavera</option>
 															<option value="No cogeré el bus">No cogeré el bus</option>
 															<option value="No lo sé">No lo sé</option>
 														</select>
 													</div>
 													<div class="col-xl-12">
-														<textarea placeholder="Mensaje adicional"></textarea>
+														<label for="dietaryPreferences">Intolerancias, alergias o
+															preferencias alimenticias:</label>
+														<textarea id="dietaryPreferences"
+															placeholder="Indique si tú o alguno de tus acompañantes tiene alguna intolerancia, alergia o preferencia alimenticia (ej. vegano, vegetariano, etc.)"></textarea>
 													</div>
+													<!-- Campo para mensaje adicional -->
+													<div class="col-xl-12">
+														<label for="message">Mensaje adicional:</label>
+														<textarea id="message"
+															placeholder="Escribe un mensaje adicional o deja este campo vacío"></textarea>
+													</div>
+
+													<!-- Botón de envío -->
 													<div class="col-xl-12">
 														<button type="submit" class="boxed_btn3">Enviar</button>
 													</div>
+
 												</div>
 											</form>
 										</div>
@@ -356,13 +395,114 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
+
+
+
+
+		<script>
+			document.getElementById("companions").addEventListener("change", function () {
+				const companionsCount = parseInt(this.value);
+				const container = document.getElementById("companionsNamesContainer");
+
+				container.innerHTML = ""; // Limpiar campos existentes
+
+				if (companionsCount > 0) {
+					for (let i = 1; i <= companionsCount; i++) {
+						const label = document.createElement("label");
+						label.textContent = `Nombre del acompañante ${i}:`;
+						label.setAttribute("for", `companionName${i}`);
+
+						const input = document.createElement("input");
+						input.type = "text";
+						input.id = `companionName${i}`;
+						input.className = "form-control companionName";
+						input.placeholder = `Introduce el nombre del acompañante ${i}`;
+						input.required = true;
+
+						container.appendChild(label);
+						container.appendChild(input);
+					}
+				}
+			});
+
+
+
+			document.getElementById("attendanceForm").addEventListener("submit", function (event) {
+				event.preventDefault();
+
+				const errorMessages = [];
+				const nameField = document.getElementById("name");
+				const busField = document.getElementById("bus");
+				const companionInputs = document.querySelectorAll(".companionName");
+
+				// Validar el campo "Tu nombre"
+				if (nameField.value.trim() === "") {
+					errorMessages.push("Por favor, introduce tu nombre.");
+				}
+
+				// Validar selección del bus
+				if (busField.value.trim() === "") {
+					errorMessages.push("Por favor, selecciona una opción sobre el bus.");
+				}
+
+				// Validar nombres de acompañantes si hay acompañantes
+				companionInputs.forEach((input, index) => {
+					if (input.value.trim() === "") {
+						errorMessages.push(`Por favor, introduce el nombre del acompañante ${index + 1}.`);
+					}
+				});
+
+				// Mostrar errores si los hay
+				if (errorMessages.length > 0) {
+					const errorContainer = document.createElement("div");
+					errorContainer.style.color = "red";
+					errorContainer.style.marginBottom = "20px";
+					errorContainer.innerHTML = errorMessages.join("<br>");
+					document.getElementById("attendanceForm").prepend(errorContainer);
+					return;
+				}
+
+				// Construir el mensaje de WhatsApp si todo es válido
+				let name = nameField.value.trim();
+				let companions = document.getElementById("companions").value.trim();
+				let bus = busField.value.trim();
+				let dietaryPreferences = document.getElementById("dietaryPreferences").value.trim() || "Ninguna";
+				let message = document.getElementById("message").value.trim() || "Ninguno";
+
+				let companionNames = [];
+				companionInputs.forEach(input => {
+					companionNames.push(input.value.trim());
+				});
+
+				let whatsappMessage = `*Confirmación de asistencia a la boda* \n\n` +
+					`*Nombre:* ${name} \n`;
+
+				if (companions === "0") {
+					whatsappMessage += `*Acompañantes:* Sin acompañantes \n`;
+				} else {
+					const companionNamesText =
+						companionNames.length > 0 ? `Nombres de acompañantes: ${companionNames.join(", ")}` : "Sin nombres de acompañantes.";
+					whatsappMessage += `*Acompañantes:* ${companions} \n${companionNamesText} \n`;
+				}
+
+				whatsappMessage += `*Bus desde Talavera:* ${bus} \n` +
+					`*Intolerancias, alergias o preferencias alimenticias:* ${dietaryPreferences} \n` +
+					`*Mensaje adicional:* ${message}`;
+
+				const whatsappURL = `https://wa.me/615437221?text=${encodeURIComponent(whatsappMessage)}`;
+				window.open(whatsappURL, "_blank");
+			});
+
+
+		</script>
+
 
 		<!-- ================ attending section end ================= -->
 		<div style="display: grid; place-items: center; height: 80px;">
 
 		</div>
+
 		<!-- ================ location section start ================= -->
 		<section class="location_area" style="display: grid; place-items: center;">
 			<div class="location_info">
@@ -476,139 +616,230 @@
 		}
 	</script>
 
-<style>
-	/* Contenedor de la galería */
-	.gallery_container {
-		width: 90%; /* Ocupa solo el 80% del ancho */
-		height: 100vh; /* Ajustamos la altura */
-		overflow: hidden;
-		position: relative;
-		margin: auto; /* Centrado horizontalmente */
-		border-radius: 15px; /* Bordes redondeados */
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle más estilo */
-		background-color: black; /* Color de fondo para evitar espacios vacíos */
-	}
-	
-	/* Slider que contiene las imágenes */
-	.gallery_slider {
-		display: flex;
-		transition: transform 1s ease-in-out; /* Transición suave */
-	}
-	
-	/* Cada imagen dentro del slider */
-	.gallery_slide {
-		width: 100%; /* Ocupa todo el ancho del contenedor */
-		height: 100%; /* Ocupa toda la altura del contenedor */
-		object-fit: cover; /* Asegura que la imagen llene el espacio sin distorsión */
-		flex-shrink: 0;
-	}
-	
-	/* Indicadores debajo de la galería */
-	.gallery_indicators {
-		position: absolute;
-		bottom: 15px;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;
-		gap: 8px;
-	}
-	
-	.dot {
-		width: 12px;
-		height: 12px;
-		background-color: rgba(255, 255, 255, 0.6);
-		border-radius: 50%;
-		cursor: pointer;
-		transition: background-color 0.3s;
-	}
-	
-	.dot.active {
-		background-color: white;
-	}
-	/* Elimina el espacio entre el audio y la cuenta atrás */
-.audio-section {
-    margin-bottom: 10px; /* Reducir espacio inferior */
-}
-.special_phrase_area {
-    padding: 40px 0;
+	<style>
+		.form-control,
+		.form-select,
+		textarea {
+			margin-bottom: 15px;
+		}
 
-}
+		.error-message {
+			color: red;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
 
-.special_phrase_box {
-    background-color: #f9f9f9; /* Fondo del recuadro */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 30px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto más elegante */
-    margin: 0 auto;
-    width: 90%; /* Ocupa el 90% del ancho de la página */
-}
+		.attending_area .row>div {
+			margin-bottom: 20px;
+		}
 
-.special_phrase {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    font-family:  sans-serif;
-    margin: 0;
-	margin-top: -20px; /* Reduce el espacio superior entre las secciones */
-    padding-top: 10px; /* Ajusta el padding superior si es necesario */
-}
+		.boxed_btn3:hover {
+			background-color: #3e8e41;
+			/* Un verde más oscuro */
+			transform: scale(1.05);
+			/* Efecto hover */
+		}
+
+		.boxed_btn3 {
+			background-color: #4CAF50;
+			/* Verde agradable */
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.boxed_btn3:hover {
+			background-color: #45a049;
+			/* Efecto hover */
+		}
 
 
+		/* Contenedor de la galería */
+		.gallery_container {
+			width: 90%;
+			/* Ocupa solo el 80% del ancho */
+			height: 100vh;
+			/* Ajustamos la altura */
+			overflow: hidden;
+			position: relative;
+			margin: auto;
+			/* Centrado horizontalmente */
+			border-radius: 15px;
+			/* Bordes redondeados */
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			/* Sombra para darle más estilo */
+			background-color: black;
+			/* Color de fondo para evitar espacios vacíos */
+		}
 
-.countdown_area {
-    padding-bottom: -20px; /* Reducir el espacio en la parte inferior */
-}
-.weeding_countdown_area {
-    margin-bottom: 0; /* Elimina el espacio inferior */
-    padding-bottom: 10px; /* Ajusta el padding inferior si es necesario */
-}
-	
-	.weeding_countdown_area span {
-    font-size: 40px; /* Aumenta el tamaño de la fuente */
-    font-weight: bold; /* Hazla más prominente */
-    text-shadow: 2px 2px 5px rgba(153, 185, 161, 0.8); /* Efecto de sombra para darle más énfasis */
-	margin-bottom: -70px; /* Reduce la separación entre la fecha y la cuenta atrás */
-	margin-top: -70px; /* Reduce el margen superior */
-}
+		/* Slider que contiene las imágenes */
+		.gallery_slider {
+			display: flex;
+			transition: transform 1s ease-in-out;
+			/* Transición suave */
+		}
+
+		/* Cada imagen dentro del slider */
+		.gallery_slide {
+			width: 100%;
+			/* Ocupa todo el ancho del contenedor */
+			height: 100%;
+			/* Ocupa toda la altura del contenedor */
+			object-fit: cover;
+			/* Asegura que la imagen llene el espacio sin distorsión */
+			flex-shrink: 0;
+		}
+
+		/* Indicadores debajo de la galería */
+		.gallery_indicators {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 8px;
+		}
+
+		.dot {
+			width: 12px;
+			height: 12px;
+			background-color: rgba(255, 255, 255, 0.6);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		.dot.active {
+			background-color: white;
+		}
+
+		/* Elimina el espacio entre el audio y la cuenta atrás */
+		.audio-section {
+			margin-bottom: 10px;
+			/* Reducir espacio inferior */
+		}
+
+		.special_phrase_area {
+			padding: 40px 0;
+
+		}
+
+		.special_phrase_box {
+			background-color: #f9f9f9;
+			/* Fondo del recuadro */
+			border-radius: 15px;
+			/* Bordes redondeados */
+			padding: 30px;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+			/* Sombra sutil para un efecto más elegante */
+			margin: 0 auto;
+			width: 90%;
+			/* Ocupa el 90% del ancho de la página */
+		}
+
+		.special_phrase {
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+			text-align: center;
+			font-family: sans-serif;
+			margin: 0;
+			margin-top: -20px;
+			/* Reduce el espacio superior entre las secciones */
+			padding-top: 10px;
+			/* Ajusta el padding superior si es necesario */
+		}
+
+		.add-to-calendar-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+			/* Espacio superior para separación */
+		}
+
+		add-to-calendar-button {
+			font-size: 16px;
+			background-color: #4CAF50;
+			/* Verde agradable */
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		add-to-calendar-button:hover {
+			background-color: #45a049;
+			/* Efecto hover */
+		}
+
+
+
+		.countdown_area {
+			padding-bottom: -20px;
+			/* Reducir el espacio en la parte inferior */
+		}
+
+		.weeding_countdown_area {
+			margin-bottom: 0;
+			/* Elimina el espacio inferior */
+			padding-bottom: 10px;
+			/* Ajusta el padding inferior si es necesario */
+		}
+
+		.weeding_countdown_area span {
+			font-size: 40px;
+			/* Aumenta el tamaño de la fuente */
+			font-weight: bold;
+			/* Hazla más prominente */
+			text-shadow: 2px 2px 5px rgba(153, 185, 161, 0.8);
+			/* Efecto de sombra para darle más énfasis */
+			margin-bottom: -70px;
+			/* Reduce la separación entre la fecha y la cuenta atrás */
+			margin-top: -70px;
+			/* Reduce el margen superior */
+		}
 	</style>
-	
+
 	<script>
-	// Controlador de las imágenes
-	let index = 0;
-	const slides = document.querySelectorAll(".gallery_slide");
-	const dots = document.querySelectorAll(".dot");
-	const totalSlides = slides.length;
-	const slider = document.querySelector(".gallery_slider");
-	
-	// Función para actualizar los indicadores
-	function updateIndicators() {
-		dots.forEach(dot => dot.classList.remove("active"));
-		dots[index].classList.add("active");
-	}
-	
-	// Función para ir al siguiente slide
-	function nextSlide() {
-		index = (index + 1) % totalSlides;
-		slider.style.transform = `translateX(-${index * 100}%)`;
-		updateIndicators();
-	}
-	
-	// Función para cambiar a un slide específico al hacer clic en un dot
-	function goToSlide(i) {
-		index = i;
-		slider.style.transform = `translateX(-${index * 100}%)`;
-		updateIndicators();
-	}
-	
-	// Asignar evento de clic a los dots
-	dots.forEach((dot, i) => {
-		dot.addEventListener("click", () => {
-			goToSlide(i);
+		// Controlador de las imágenes
+		let index = 0;
+		const slides = document.querySelectorAll(".gallery_slide");
+		const dots = document.querySelectorAll(".dot");
+		const totalSlides = slides.length;
+		const slider = document.querySelector(".gallery_slider");
+
+		// Función para actualizar los indicadores
+		function updateIndicators() {
+			dots.forEach(dot => dot.classList.remove("active"));
+			dots[index].classList.add("active");
+		}
+
+		// Función para ir al siguiente slide
+		function nextSlide() {
+			index = (index + 1) % totalSlides;
+			slider.style.transform = `translateX(-${index * 100}%)`;
+			updateIndicators();
+		}
+
+		// Función para cambiar a un slide específico al hacer clic en un dot
+		function goToSlide(i) {
+			index = i;
+			slider.style.transform = `translateX(-${index * 100}%)`;
+			updateIndicators();
+		}
+
+		// Asignar evento de clic a los dots
+		dots.forEach((dot, i) => {
+			dot.addEventListener("click", () => {
+				goToSlide(i);
+			});
 		});
-	});
-	
-	// Cambiar de imagen cada 5 segundos automáticamente
-	setInterval(nextSlide, 5000); // Pasa cada 5 segundos con suavidad
+
+		// Cambiar de imagen cada 5 segundos automáticamente
+		setInterval(nextSlide, 5000); // Pasa cada 5 segundos con suavidad
 	</script>
 </body>
