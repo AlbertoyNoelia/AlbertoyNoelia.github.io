@@ -203,19 +203,18 @@
 				<div class="row">
 					<!-- Columna izquierda con fotos -->
 					<div class="col-xl-4 col-md-6 col-lg-4 love-story-images">
-						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid hidden left-slide">
-						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-fluid hidden left-slide">
-						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-fluid hidden left-slide">
+						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid reveal-left">
+						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-fluid reveal-left">
+						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-fluid reveal-left">
 					</div>
-
 					<!-- Columna central con la historia -->
 					<div class="col-xl-4 col-md-6 col-lg-4">
 						<div class="weding_time_line text-center">
 							<div class="single_time_line">
 								<h3>El comienzo de nuestra historia</h3>
 								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos
-									que
-									estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la mano
+									que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la
+									mano
 								</p>
 							</div>
 							<div class="single_time_line">
@@ -247,14 +246,13 @@
 
 					<!-- Columna derecha con fotos -->
 					<div class="col-xl-4 col-lg-4 love-story-images">
-						<img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-fluid hidden right-slide">
-						<img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-fluid hidden right-slide">
-						<img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-fluid hidden right-slide">
+						<img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-fluid reveal-right">
+						<img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-fluid reveal-right">
+						<img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-fluid reveal-right">
 					</div>
 				</div>
 			</div>
 		</div>
-
 
 		<!--/ our_love-story -->
 		<!-- Frase especial después de la cuenta atrás -->
@@ -277,39 +275,33 @@
 				<div class="row">
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_1 text-center">
-							<div class="program_inner ">
-								<span>
-									12:45
-								</span>
+							<div class="program_inner">
+								<span>12:45</span>
 								<h3>Ceremonia</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>La ceremonia será en la Hacienda del Marqués (Bargas), un sitio único donde
+									comenzaremos nuestra vida juntos en este día tan especial</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_2 text-center">
-							<div class="program_inner ">
-								<span>
-									14:00
-								</span>
+							<div class="program_inner">
+								<span>14:00</span>
 								<h3>Catering y Banquete</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>Tras la ceremonia, nos reuniremos en la misma hacienda para disfrutar de un delicioso
+									catering y un banquete lleno de momentos únicos y sorpresas</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_3 text-center">
-							<div class="program_inner ">
-								<span>
-									19:00
-								</span>
+							<div class="program_inner">
+								<span>19:00</span>
 								<h3>Fiesta</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>¡La fiesta será épica sin tener que ir a ningún otro sitio! Prepárate para una noche
+									llena de energía, música y momentos que jamás olvidaremos</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
@@ -317,6 +309,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--/ program_details -->
 
 		<!-- attend_area -->
@@ -465,7 +458,7 @@
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/plugins.js"></script>
-
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
 
 
@@ -505,62 +498,48 @@
 	</script>
 
 	<script>
-		// Detectar cuando las imágenes están en el viewport
-		const images = document.querySelectorAll('.love-story-images img');
 
-		// Crear el observer para detectar cuando las imágenes estén visibles
-		const observer = new IntersectionObserver((entries, observer) => {
-			entries.forEach(entry => {
-				// Si la imagen está visible en el viewport
-				if (entry.isIntersecting) {
-					// Añadir la clase para hacer visible y mover la imagen
-					entry.target.classList.add('img-visible');
-					// Dejar de observar la imagen después de que se haya vuelto visible
-					observer.unobserve(entry.target);
-				}
-			});
-		}, {
-			threshold: 0.5 // Se activa cuando el 50% de la imagen es visible
+		// Inicializar ScrollReveal
+		const sr = ScrollReveal({
+			origin: 'left', // Dirección de la animación (izquierda)
+			distance: '100px', // Distancia del desplazamiento
+			duration: 600, // Duración de la animación en milisegundos
+			delay: 200, // Retraso antes de iniciar la animación
+			reset: true // Si la animación debe repetirse cada vez que el elemento entra en el viewport
 		});
 
-		// Observar todas las imágenes
-		images.forEach(image => {
-			observer.observe(image);
+		// Aplicar animación a las imágenes que deben aparecer desde la izquierda
+		sr.reveal('.reveal-left', {
+			origin: 'left',
+			distance: '100px',
+			interval: 200 // Intervalo entre animaciones de elementos múltiples
 		});
+
+		// Aplicar animación a las imágenes que deben aparecer desde la derecha
+		sr.reveal('.reveal-right', {
+			origin: 'right',
+			distance: '100px',
+			interval: 200
+		});
+
 
 	</script>
 
 
 
 	<style>
-		/* Animaciones para las imágenes */
-		.love-story-images img {
-			opacity: 0;
-			transition: all 1s ease-in-out;
-			display: block;
-			/* Asegurarse de que las imágenes sean bloques */
-			width: 100%;
-			/* Asegura que las imágenes ocupen el 100% del contenedor */
-		}
+/* Estado inicial de las imágenes: ocultas y desplazadas */
+.reveal-left, .reveal-right {
+    opacity: 0;
+    transform: translateX(-100px); /* Para reveal-left; para reveal-right, usa translateX(100px); */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
 
-		/* Animación desde la izquierda */
-		.left-slide {
-			transform: translateX(-100%);
-			/* Empuja las imágenes fuera de la pantalla desde la izquierda */
-		}
-
-		/* Animación desde la derecha */
-		.right-slide {
-			transform: translateX(100%);
-			/* Empuja las imágenes fuera de la pantalla desde la derecha */
-		}
-
-		/* Cuando las imágenes son visibles, deben moverse a su lugar */
-		.img-visible {
-			opacity: 1;
-			transform: translateX(0);
-			/* Mueve las imágenes a su posición original */
-		}
+/* Estado final de las imágenes: visibles en su posición original */
+.reveal-left.visible, .reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 
 		/* Contenedor de la galería */
