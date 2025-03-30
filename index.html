@@ -96,197 +96,214 @@
 	</div>
 
 	<div id="slide2" style="display: none;">
-		<!-- header-->
+		<!-- Header -->
 		<header>
 			<div class="header-area">
-				
-					<div class="container">
-						<div class="row align-items-center">
-							<!-- Logo que se moverá a la izquierda -->
-							<div class="col-xl-3 col-lg-3 d-flex justify-content-start">
-								<div class="logo-img">
-									<a href="index.html">
-										<img src="img/logo.png" alt="" width="100">
-									</a>
-								</div>
-							</div>
-							<!-- Menú móvil -->
-							<div class="col-12">
-								<div class="mobile_menu d-block d-lg-none"></div>
-							</div>
-						</div>
+				<div class="container-header">
+					<!-- Logo alineado a la izquierda -->
+					<div class="logo-img">
+						<a href="index.html">
+							<img src="img/logo.png" alt="Logo" width="100">
+						</a>
 					</div>
-				
+				</div>
+				<!-- Menú móvil alineado a la izquierda -->
+				<div class="col-12 d-flex justify-content-start">
+					<div class="mobile_menu d-block d-lg-none"></div>
+				</div>
 			</div>
 		</header>
-		
-		<style>
-		/* Aseguramos que el logo se alinee a la izquierda */
-		.header-area .container .row {
-			display: flex;
-			justify-content: flex-start;  /* Mueve todo el contenido a la izquierda */
-		}
-		
-		/* Si necesitas más control en pantallas pequeñas */
-		@media (max-width: 767px) {
-			.header-area .container .row {
-				justify-content: flex-start;  /* Mueve todo a la izquierda en pantallas pequeñas también */
-			}
-		}
-		
-		/* Si necesitas un pequeño ajuste, puedes usar margen */
-		.logo-img {
-    margin-left: 0; /* Ajusta este valor si necesitas mover el logo más a la izquierda */
-    margin-top: 0px; /* Ajusta este valor según cuánto desees moverlo hacia arriba */
-}
-		</style>
-		
-		
-	<br>
-		<!--/ header-->
-<!-- Galería de Imágenes -->
-<div class="gallery_container">
-    <div class="gallery_slider">
-        <img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1">
-        <img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2">
-        <img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3">
-        <img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4">
-		<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5">
-    </div>
-	 <!-- Indicadores -->
-	 <div class="gallery_indicators">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<br>
 
-<!-- Audio section -->
-<div style="display: grid; place-items: center; height: 80px;">
-	<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
-</div>
-		<!-- wedding_countdown -->
-		<div class="weeding_countdown_area">
-		
+
+		<style>
+			/* Aseguramos que el logo se alinee a la izquierda */
+			.header-area .container .row {
+				display: flex;
+				justify-content: flex-start;
+				/* Mueve todo el contenido a la izquierda */
+			}
+
+			/* Si necesitas más control en pantallas pequeñas */
+			@media (max-width: 767px) {
+				.header-area .container .row {
+					justify-content: flex-start;
+					/* Mueve todo a la izquierda en pantallas pequeñas también */
+				}
+			}
+
+			/* Si necesitas un pequeño ajuste, puedes usar margen */
+			.logo-img {
+				margin-left: 0;
+				/* Ajusta este valor si necesitas mover el logo más a la izquierda */
+				margin-top: 0px;
+				/* Ajusta este valor según cuánto desees moverlo hacia arriba */
+			}
+		</style>
+
+
+		<br>
+		<!--/ header-->
+		<!-- Galería de Imágenes -->
+		<div class="gallery_container">
+			<div class="gallery_slider">
+				<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1">
+				<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2">
+				<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3">
+				<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4">
+				<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5">
+			</div>
+			<!-- Indicadores -->
+			<div class="gallery_indicators">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<div class="flower_fondo d-none d-lg-block">
+				<img src="img/appointment/flower.png" alt="">
+			</div>
+	
+		</div>	
+			<!-- Audio section -->
+			<div style="display: grid; place-items: center; height: 80px;">
+				<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
+			</div>
+			<div class="weeding_countdown_area position-relative">
+			<!-- wedding_countdown -->
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="section_title text-center">
-						
 							<span>27 de Septiembre de 2025</span>
-					
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xl-12">
-						<div id="clock" class="countdown_area counter_bg ">
+						<div id="clock" class="countdown_area counter_bg">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
 
-<!-- Frase especial después de la cuenta atrás -->
-<div class="special_phrase_area">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12 text-center">
-				<div class="special_phrase_box">
-					<p class="special_phrase">"En este día tan especial, comeremos como enanos, bebemos como elfos, y celebraremos el amor como lo harían los hobbits, rodeados de amigos y familia"</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
+
 
 		<!--/ wedding_countdown -->
-				
+
 		<!-- our_love-story -->
 		<div class="love_story_area">
 			<div class="container">
 				<div class="row">
-					 <!-- Columna izquierda con foto -->
-					 <div class="col-xl-4 col-md-6 col-lg-4">
-						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid">
-						<img src="img/gallery/8.jpg" alt="Foto de nosotros 1" class="img-fluid">
-						<img src="img/gallery/9.jpg" alt="Foto de nosotros 1" class="img-fluid">
+					<!-- Columna izquierda con fotos -->
+					<div class="col-xl-4 col-md-6 col-lg-4 love-story-images">
+						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid reveal-left">
+						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-fluid reveal-left">
+						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-fluid reveal-left">
 					</div>
+					<!-- Columna central con la historia -->
 					<div class="col-xl-4 col-md-6 col-lg-4">
 						<div class="weding_time_line text-center">
 							<div class="single_time_line">
 								<h3>El comienzo de nuestra historia</h3>
-								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la mano</p>
+								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos
+									que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la
+									mano
+								</p>
 							</div>
 							<div class="single_time_line">
 								<h3>Nuestro hogar</h3>
-								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos construido un hogar lleno de amor, risas y momentos que quedarán para siempre en nuestros corazones</p>
+								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos
+									construido un hogar lleno de amor, risas y momentos que quedarán para siempre en
+									nuestros corazones</p>
+							</div>
+							<div class="single_time_line">
+								<h3>Creciendo juntos</h3>
+								<p>A lo largo de los años, hemos crecido como personas y como pareja. Juntos hemos
+									enfrentado desafíos que nos han permitido madurar, aprender de nuestros errores y
+									crecer en nuestras propias metas y sueños. Cada reto nos ha hecho más fuertes y
+									unido aún más
+								</p>
 							</div>
 							<div class="single_time_line">
 								<h3>Las pedidas de mano</h3>
-								<p>Después de 6 años juntos, Alberto pidió la mano a Noelia en Florencia, y en un giro inesperado, también Noelia se lo pidió a él</p>
+								<p>Después de 6 años juntos, Alberto pidió la mano a Noelia en Florencia, y en un giro
+									inesperado, también Noelia se lo pidió a él</p>
 							</div>
 							<div class="single_time_line">
 								<h3>El gran día</h3>
+								<p>Después de casi 8 años juntos, finalmente nos diremos el sí quiero, listos para
+									comenzar esta nueva etapa en nuestra vida</p>
 							</div>
 						</div>
 					</div>
-					  <!-- Columna derecha con foto -->
-					  <div class="col-xl-4 col-lg-4">
-						<img src="img/gallery/7.jpg" alt="Foto de nosotros 1" class="img-fluid">
-						<img src="img/gallery/10.jpg" alt="Foto de nosotros 1" class="img-fluid">
+
+					<!-- Columna derecha con fotos -->
+					<div class="col-xl-4 col-lg-4 love-story-images">
+						<img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-fluid reveal-right">
+						<img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-fluid reveal-right">
+						<img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-fluid reveal-right">
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--/ our_love-story -->
 
+		<!--/ our_love-story -->
+		<!-- Frase especial después de la cuenta atrás -->
+		<div class="special_phrase_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 text-center">
+						<div class="special_phrase_box">
+							<p class="special_phrase">"En este día tan especial, comeremos como enanos, bebemos como
+								elfos,
+								y celebraremos el amor como lo harían los hobbits, rodeados de amigos y familia"</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- program_details -->
 		<div class="program_details_area">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_1 text-center">
-							<div class="program_inner ">
-								<span>
-									12:45
-								</span>
+							<div class="program_inner">
+								<span>12:45</span>
 								<h3>Ceremonia</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>La ceremonia será en la Hacienda del Marqués (Bargas), un sitio único donde
+									comenzaremos nuestra vida juntos en este día tan especial</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_2 text-center">
-							<div class="program_inner ">
-								<span>
-									14:00
-								</span>
+							<div class="program_inner">
+								<span>14:00</span>
 								<h3>Catering y Banquete</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>Tras la ceremonia, nos reuniremos en la misma hacienda para disfrutar de un delicioso
+									catering y un banquete lleno de momentos únicos y sorpresas</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_3 text-center">
-							<div class="program_inner ">
-								<span>
-									19:00
-								</span>
+							<div class="program_inner">
+								<span>19:00</span>
 								<h3>Fiesta</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>¡La fiesta será épica sin tener que ir a ningún otro sitio! Prepárate para una noche
+									llena de energía, música y momentos que jamás olvidaremos</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
@@ -294,6 +311,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--/ program_details -->
 
 		<!-- attend_area -->
@@ -315,7 +333,9 @@
 										<div class="popup_inner">
 											<div class="form_heading text-center">
 												<h3>¿Vas a poder asistir?</h3>
-												<p>Por favor, especifica el número de acompañantes y si cogerás el bus que facilitaremos desde Talavera de la Reina.</p>
+												<p>Por favor, especifica el número de acompañantes y si cogerás el bus
+													que
+													facilitaremos desde Talavera de la Reina.</p>
 											</div>
 											<form action="#">
 												<div class="row">
@@ -324,19 +344,22 @@
 													</div>
 													<div class="col-xl-12">
 														<select class="form-select wide" id="default-select" class="">
-															<option data-display="Sin acompañantes">Sin acompañantes</option>
+															<option data-display="Sin acompañantes">Sin acompañantes
+															</option>
 															<option value="1 Acompañante">1 Acompañante</option>
 															<option value="2 Acompañantes">2 Acompañantes</option>
 															<option value="3 Acompañantes">3 Acompañantes</option>
 															<option value="4 Acompañantes">4 Acompañantes</option>
 															<option value="5 Acompañantes">5 Acompañantes</option>
 															<option value="Otros">Otros (especificar más abajo)</option>
-													
+
 														</select>
 													</div>
 													<div class="col-xl-12">
 														<select class="form-select wide" id="default-select" class="">
-															<option data-display="Cogeré el bus desde Talavera">Cogeré el bus desde Talavera</option>
+															<option data-display="Cogeré el bus desde Talavera">Cogeré
+																el
+																bus desde Talavera</option>
 															<option value="No cogeré el bus">No cogeré el bus</option>
 															<option value="No lo sé">No lo sé</option>
 														</select>
@@ -437,7 +460,7 @@
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/plugins.js"></script>
-
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
 
 
@@ -476,139 +499,235 @@
 		}
 	</script>
 
-<style>
-	/* Contenedor de la galería */
-	.gallery_container {
-		width: 90%; /* Ocupa solo el 80% del ancho */
-		height: 100vh; /* Ajustamos la altura */
-		overflow: hidden;
-		position: relative;
-		margin: auto; /* Centrado horizontalmente */
-		border-radius: 15px; /* Bordes redondeados */
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle más estilo */
-		background-color: black; /* Color de fondo para evitar espacios vacíos */
-	}
-	
-	/* Slider que contiene las imágenes */
-	.gallery_slider {
-		display: flex;
-		transition: transform 1s ease-in-out; /* Transición suave */
-	}
-	
-	/* Cada imagen dentro del slider */
-	.gallery_slide {
-		width: 100%; /* Ocupa todo el ancho del contenedor */
-		height: 100%; /* Ocupa toda la altura del contenedor */
-		object-fit: cover; /* Asegura que la imagen llene el espacio sin distorsión */
-		flex-shrink: 0;
-	}
-	
-	/* Indicadores debajo de la galería */
-	.gallery_indicators {
-		position: absolute;
-		bottom: 15px;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;
-		gap: 8px;
-	}
-	
-	.dot {
-		width: 12px;
-		height: 12px;
-		background-color: rgba(255, 255, 255, 0.6);
-		border-radius: 50%;
-		cursor: pointer;
-		transition: background-color 0.3s;
-	}
-	
-	.dot.active {
-		background-color: white;
-	}
-	/* Elimina el espacio entre el audio y la cuenta atrás */
-.audio-section {
-    margin-bottom: 10px; /* Reducir espacio inferior */
-}
-.special_phrase_area {
-    padding: 40px 0;
-
-}
-
-.special_phrase_box {
-    background-color: #f9f9f9; /* Fondo del recuadro */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 30px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto más elegante */
-    margin: 0 auto;
-    width: 90%; /* Ocupa el 90% del ancho de la página */
-}
-
-.special_phrase {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    font-family:  sans-serif;
-    margin: 0;
-	margin-top: -20px; /* Reduce el espacio superior entre las secciones */
-    padding-top: 10px; /* Ajusta el padding superior si es necesario */
-}
-
-
-
-.countdown_area {
-    padding-bottom: -20px; /* Reducir el espacio en la parte inferior */
-}
-.weeding_countdown_area {
-    margin-bottom: 0; /* Elimina el espacio inferior */
-    padding-bottom: 10px; /* Ajusta el padding inferior si es necesario */
-}
-	
-	.weeding_countdown_area span {
-    font-size: 40px; /* Aumenta el tamaño de la fuente */
-    font-weight: bold; /* Hazla más prominente */
-    text-shadow: 2px 2px 5px rgba(153, 185, 161, 0.8); /* Efecto de sombra para darle más énfasis */
-	margin-bottom: -70px; /* Reduce la separación entre la fecha y la cuenta atrás */
-	margin-top: -70px; /* Reduce el margen superior */
-}
-	</style>
-	
 	<script>
-	// Controlador de las imágenes
-	let index = 0;
-	const slides = document.querySelectorAll(".gallery_slide");
-	const dots = document.querySelectorAll(".dot");
-	const totalSlides = slides.length;
-	const slider = document.querySelector(".gallery_slider");
-	
-	// Función para actualizar los indicadores
-	function updateIndicators() {
-		dots.forEach(dot => dot.classList.remove("active"));
-		dots[index].classList.add("active");
-	}
-	
-	// Función para ir al siguiente slide
-	function nextSlide() {
-		index = (index + 1) % totalSlides;
-		slider.style.transform = `translateX(-${index * 100}%)`;
-		updateIndicators();
-	}
-	
-	// Función para cambiar a un slide específico al hacer clic en un dot
-	function goToSlide(i) {
-		index = i;
-		slider.style.transform = `translateX(-${index * 100}%)`;
-		updateIndicators();
-	}
-	
-	// Asignar evento de clic a los dots
-	dots.forEach((dot, i) => {
-		dot.addEventListener("click", () => {
-			goToSlide(i);
+
+		// Inicializar ScrollReveal
+		const sr = ScrollReveal({
+			origin: 'left', // Dirección de la animación (izquierda)
+			distance: '100px', // Distancia del desplazamiento
+			duration: 600, // Duración de la animación en milisegundos
+			delay: 200, // Retraso antes de iniciar la animación
+			reset: true // Si la animación debe repetirse cada vez que el elemento entra en el viewport
 		});
-	});
-	
-	// Cambiar de imagen cada 5 segundos automáticamente
-	setInterval(nextSlide, 5000); // Pasa cada 5 segundos con suavidad
+
+		// Aplicar animación a las imágenes que deben aparecer desde la izquierda
+		sr.reveal('.reveal-left', {
+			origin: 'left',
+			distance: '100px',
+			interval: 200 // Intervalo entre animaciones de elementos múltiples
+		});
+
+		// Aplicar animación a las imágenes que deben aparecer desde la derecha
+		sr.reveal('.reveal-right', {
+			origin: 'right',
+			distance: '100px',
+			interval: 200
+		});
+
+
+	</script>
+
+
+
+	<style>
+		/* Estado inicial de las imágenes: ocultas y desplazadas */
+		.reveal-left,
+		.reveal-right {
+			opacity: 0;
+			transform: translateX(-100px);
+			/* Para reveal-left; para reveal-right, usa translateX(100px); */
+			transition: opacity 0.6s ease, transform 0.6s ease;
+		}
+
+		/* Estado final de las imágenes: visibles en su posición original */
+		.reveal-left.visible,
+		.reveal-right.visible {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		.flower_fondo {
+			position: absolute;
+			/* Permite posicionar dentro del contenedor */
+			right: 0;
+			/* Alineado a la derecha */
+			bottom: 0;
+			/* Alineado abajo dentro del contenedor */
+			z-index: -1;
+			/* Lo coloca detrás del contenido */
+			max-width: 300px;
+			/* Controla el tamaño */
+		}
+
+		@media (max-width: 992px) {
+			.flower_fondo {
+				display: none;
+				/* Oculta en móviles */
+			}
+		}
+
+
+
+		/* Contenedor de la galería */
+		.gallery_container {
+			width: 90%;
+			/* Ocupa solo el 80% del ancho */
+			height: 100vh;
+			/* Ajustamos la altura */
+			overflow: hidden;
+			position: relative;
+			margin: auto;
+			/* Centrado horizontalmente */
+			border-radius: 15px;
+			/* Bordes redondeados */
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			/* Sombra para darle más estilo */
+			background-color: black;
+			/* Color de fondo para evitar espacios vacíos */
+		}
+
+		/* Slider que contiene las imágenes */
+		.gallery_slider {
+			display: flex;
+			transition: transform 1s ease-in-out;
+			/* Transición suave */
+		}
+
+		/* Cada imagen dentro del slider */
+		.gallery_slide {
+			width: 100%;
+			/* Ocupa todo el ancho del contenedor */
+			height: 100%;
+			/* Ocupa toda la altura del contenedor */
+			object-fit: cover;
+			/* Asegura que la imagen llene el espacio sin distorsión */
+			flex-shrink: 0;
+		}
+
+		/* Indicadores debajo de la galería */
+		.gallery_indicators {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 8px;
+		}
+
+		.dot {
+			width: 12px;
+			height: 12px;
+			background-color: rgba(255, 255, 255, 0.6);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		.dot.active {
+			background-color: white;
+		}
+
+		/* Elimina el espacio entre el audio y la cuenta atrás */
+		.audio-section {
+			margin-bottom: 10px;
+			/* Reducir espacio inferior */
+		}
+
+		.special_phrase_area {
+			padding: 40px 0;
+
+		}
+
+		.special_phrase_box {
+			background-color: #f9f9f9;
+			/* Fondo del recuadro */
+			border-radius: 15px;
+			/* Bordes redondeados */
+			padding: 30px;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+			/* Sombra sutil para un efecto más elegante */
+			margin: 0 auto;
+			width: 90%;
+			/* Ocupa el 90% del ancho de la página */
+		}
+
+		.special_phrase {
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+			text-align: center;
+			font-family: sans-serif;
+			margin: 0;
+			margin-top: -20px;
+			/* Reduce el espacio superior entre las secciones */
+			padding-top: 10px;
+			/* Ajusta el padding superior si es necesario */
+		}
+
+
+
+		.countdown_area {
+			padding-bottom: -20px;
+			/* Reducir el espacio en la parte inferior */
+		}
+
+		.weeding_countdown_area {
+			margin-bottom: 0;
+			/* Elimina el espacio inferior */
+			padding-bottom: 10px;
+			/* Ajusta el padding inferior si es necesario */
+		}
+
+		.weeding_countdown_area span {
+			font-size: 40px;
+			/* Aumenta el tamaño de la fuente */
+			font-weight: bold;
+			/* Hazla más prominente */
+			text-shadow: 2px 2px 5px rgba(153, 185, 161, 0.8);
+			/* Efecto de sombra para darle más énfasis */
+			margin-bottom: -70px;
+			/* Reduce la separación entre la fecha y la cuenta atrás */
+			margin-top: -70px;
+			/* Reduce el margen superior */
+		}
+	</style>
+
+	<script>
+		// Controlador de las imágenes
+		let index = 0;
+		const slides = document.querySelectorAll(".gallery_slide");
+		const dots = document.querySelectorAll(".dot");
+		const totalSlides = slides.length;
+		const slider = document.querySelector(".gallery_slider");
+
+		// Función para actualizar los indicadores
+		function updateIndicators() {
+			dots.forEach(dot => dot.classList.remove("active"));
+			dots[index].classList.add("active");
+		}
+
+		// Función para ir al siguiente slide
+		function nextSlide() {
+			index = (index + 1) % totalSlides;
+			slider.style.transform = `translateX(-${index * 100}%)`;
+			updateIndicators();
+		}
+
+		// Función para cambiar a un slide específico al hacer clic en un dot
+		function goToSlide(i) {
+			index = i;
+			slider.style.transform = `translateX(-${index * 100}%)`;
+			updateIndicators();
+		}
+
+		// Asignar evento de clic a los dots
+		dots.forEach((dot, i) => {
+			dot.addEventListener("click", () => {
+				goToSlide(i);
+			});
+		});
+
+		// Cambiar de imagen cada 5 segundos automáticamente
+		setInterval(nextSlide, 5000); // Pasa cada 5 segundos con suavidad
 	</script>
 </body>
