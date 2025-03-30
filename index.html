@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- <link rel="manifest" href="site.webmanifest"> -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<!-- Place favicon.ico in the root directory -->
@@ -99,6 +98,7 @@
 		<!-- Header -->
 		<header>
 			<div class="header-area">
+
 				<div class="container-header">
 					<!-- Logo alineado a la izquierda -->
 					<div class="logo-img">
@@ -113,7 +113,6 @@
 				</div>
 			</div>
 		</header>
-
 
 		<style>
 			/* Aseguramos que el logo se alinee a la izquierda */
@@ -165,6 +164,7 @@
 		<br>
 		<br>
 		<br>
+
 		<div class="container">
 			<div class="flower_fondo d-none d-lg-block">
 				<img src="img/appointment/flower.png" alt="">
@@ -177,6 +177,7 @@
 			</div>
 			<div class="weeding_countdown_area position-relative">
 			<!-- wedding_countdown -->
+
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12">
@@ -195,19 +196,19 @@
 		</div>
 
 
-
-
 		<!--/ wedding_countdown -->
 
 		<!-- our_love-story -->
 		<div class="love_story_area">
 			<div class="container">
 				<div class="row">
+
 					<!-- Columna izquierda con fotos -->
 					<div class="col-xl-4 col-md-6 col-lg-4 love-story-images">
 						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid reveal-left">
 						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-fluid reveal-left">
 						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-fluid reveal-left">
+
 					</div>
 					<!-- Columna central con la historia -->
 					<div class="col-xl-4 col-md-6 col-lg-4">
@@ -224,6 +225,7 @@
 								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos
 									construido un hogar lleno de amor, risas y momentos que quedarán para siempre en
 									nuestros corazones</p>
+
 							</div>
 							<div class="single_time_line">
 								<h3>Creciendo juntos</h3>
@@ -232,6 +234,7 @@
 									crecer en nuestras propias metas y sueños. Cada reto nos ha hecho más fuertes y
 									unido aún más
 								</p>
+
 							</div>
 							<div class="single_time_line">
 								<h3>Las pedidas de mano</h3>
@@ -337,39 +340,65 @@
 													que
 													facilitaremos desde Talavera de la Reina.</p>
 											</div>
-											<form action="#">
+											<form id="attendanceForm">
 												<div class="row">
+
+													<!-- Campo para el nombre -->
 													<div class="col-xl-12">
-														<input type="text" placeholder="Tu nombre">
+														<label for="name">Tu nombre:</label>
+														<input type="text" id="name" placeholder="Introduce tu nombre"
+															required>
 													</div>
+
+													<!-- Selección del número de acompañantes -->
 													<div class="col-xl-12">
-														<select class="form-select wide" id="default-select" class="">
-															<option data-display="Sin acompañantes">Sin acompañantes
+														<label for="companions">Número de acompañantes:</label>
+														<select class="form-select wide" id="companions" required>
+															<option value="" disabled selected>Selecciona una opción
 															</option>
-															<option value="1 Acompañante">1 Acompañante</option>
-															<option value="2 Acompañantes">2 Acompañantes</option>
-															<option value="3 Acompañantes">3 Acompañantes</option>
-															<option value="4 Acompañantes">4 Acompañantes</option>
-															<option value="5 Acompañantes">5 Acompañantes</option>
-															<option value="Otros">Otros (especificar más abajo)</option>
+															<option value="0">Sin acompañantes</option>
+															<option value="1">1 Acompañante</option>
+															<option value="2">2 Acompañantes</option>
+															<option value="3">3 Acompañantes</option>
+															<option value="4">4 Acompañantes</option>
+															<option value="5">5 Acompañantes</option>
 
 														</select>
 													</div>
+
+													<!-- Contenedor dinámico para nombres de acompañantes -->
+													<div class="col-xl-12" id="companionsNamesContainer"></div>
+
+													<!-- Selección sobre el bus -->
 													<div class="col-xl-12">
-														<select class="form-select wide" id="default-select" class="">
-															<option data-display="Cogeré el bus desde Talavera">Cogeré
-																el
-																bus desde Talavera</option>
+														<label for="bus">¿Cogerás el bus desde Talavera?</label>
+														<select class="form-select wide" id="bus" required>
+															<option value="" disabled selected>Selecciona una opción
+															</option>
+															<option value="Cogeré el bus desde Talavera">Cogeré el bus
+																desde Talavera</option>
 															<option value="No cogeré el bus">No cogeré el bus</option>
 															<option value="No lo sé">No lo sé</option>
 														</select>
 													</div>
 													<div class="col-xl-12">
-														<textarea placeholder="Mensaje adicional"></textarea>
+														<label for="dietaryPreferences">Intolerancias, alergias o
+															preferencias alimenticias:</label>
+														<textarea id="dietaryPreferences"
+															placeholder="Indique si tú o alguno de tus acompañantes tiene alguna intolerancia, alergia o preferencia alimenticia (ej. vegano, vegetariano, etc.)"></textarea>
 													</div>
+													<!-- Campo para mensaje adicional -->
+													<div class="col-xl-12">
+														<label for="message">Mensaje adicional:</label>
+														<textarea id="message"
+															placeholder="Escribe un mensaje adicional o deja este campo vacío"></textarea>
+													</div>
+
+													<!-- Botón de envío -->
 													<div class="col-xl-12">
 														<button type="submit" class="boxed_btn3">Enviar</button>
 													</div>
+
 												</div>
 											</form>
 										</div>
@@ -379,13 +408,114 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
+
+
+
+
+		<script>
+			document.getElementById("companions").addEventListener("change", function () {
+				const companionsCount = parseInt(this.value);
+				const container = document.getElementById("companionsNamesContainer");
+
+				container.innerHTML = ""; // Limpiar campos existentes
+
+				if (companionsCount > 0) {
+					for (let i = 1; i <= companionsCount; i++) {
+						const label = document.createElement("label");
+						label.textContent = `Nombre del acompañante ${i}:`;
+						label.setAttribute("for", `companionName${i}`);
+
+						const input = document.createElement("input");
+						input.type = "text";
+						input.id = `companionName${i}`;
+						input.className = "form-control companionName";
+						input.placeholder = `Introduce el nombre del acompañante ${i}`;
+						input.required = true;
+
+						container.appendChild(label);
+						container.appendChild(input);
+					}
+				}
+			});
+
+
+
+			document.getElementById("attendanceForm").addEventListener("submit", function (event) {
+				event.preventDefault();
+
+				const errorMessages = [];
+				const nameField = document.getElementById("name");
+				const busField = document.getElementById("bus");
+				const companionInputs = document.querySelectorAll(".companionName");
+
+				// Validar el campo "Tu nombre"
+				if (nameField.value.trim() === "") {
+					errorMessages.push("Por favor, introduce tu nombre.");
+				}
+
+				// Validar selección del bus
+				if (busField.value.trim() === "") {
+					errorMessages.push("Por favor, selecciona una opción sobre el bus.");
+				}
+
+				// Validar nombres de acompañantes si hay acompañantes
+				companionInputs.forEach((input, index) => {
+					if (input.value.trim() === "") {
+						errorMessages.push(`Por favor, introduce el nombre del acompañante ${index + 1}.`);
+					}
+				});
+
+				// Mostrar errores si los hay
+				if (errorMessages.length > 0) {
+					const errorContainer = document.createElement("div");
+					errorContainer.style.color = "red";
+					errorContainer.style.marginBottom = "20px";
+					errorContainer.innerHTML = errorMessages.join("<br>");
+					document.getElementById("attendanceForm").prepend(errorContainer);
+					return;
+				}
+
+				// Construir el mensaje de WhatsApp si todo es válido
+				let name = nameField.value.trim();
+				let companions = document.getElementById("companions").value.trim();
+				let bus = busField.value.trim();
+				let dietaryPreferences = document.getElementById("dietaryPreferences").value.trim() || "Ninguna";
+				let message = document.getElementById("message").value.trim() || "Ninguno";
+
+				let companionNames = [];
+				companionInputs.forEach(input => {
+					companionNames.push(input.value.trim());
+				});
+
+				let whatsappMessage = `*Confirmación de asistencia a la boda* \n\n` +
+					`*Nombre:* ${name} \n`;
+
+				if (companions === "0") {
+					whatsappMessage += `*Acompañantes:* Sin acompañantes \n`;
+				} else {
+					const companionNamesText =
+						companionNames.length > 0 ? `Nombres de acompañantes: ${companionNames.join(", ")}` : "Sin nombres de acompañantes.";
+					whatsappMessage += `*Acompañantes:* ${companions} \n${companionNamesText} \n`;
+				}
+
+				whatsappMessage += `*Bus desde Talavera:* ${bus} \n` +
+					`*Intolerancias, alergias o preferencias alimenticias:* ${dietaryPreferences} \n` +
+					`*Mensaje adicional:* ${message}`;
+
+				const whatsappURL = `https://wa.me/615437221?text=${encodeURIComponent(whatsappMessage)}`;
+				window.open(whatsappURL, "_blank");
+			});
+
+
+		</script>
+
 
 		<!-- ================ attending section end ================= -->
 		<div style="display: grid; place-items: center; height: 80px;">
 
 		</div>
+
 		<!-- ================ location section start ================= -->
 		<section class="location_area" style="display: grid; place-items: center;">
 			<div class="location_info">
@@ -499,6 +629,47 @@
 		}
 	</script>
 
+	<style>
+		.form-control,
+		.form-select,
+		textarea {
+			margin-bottom: 15px;
+		}
+
+		.error-message {
+			color: red;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		.attending_area .row>div {
+			margin-bottom: 20px;
+		}
+
+		.boxed_btn3:hover {
+			background-color: #3e8e41;
+			/* Un verde más oscuro */
+			transform: scale(1.05);
+			/* Efecto hover */
+		}
+
+		.boxed_btn3 {
+			background-color: #4CAF50;
+			/* Verde agradable */
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.boxed_btn3:hover {
+			background-color: #45a049;
+			/* Efecto hover */
+		}
+
+
 	<script>
 
 		// Inicializar ScrollReveal
@@ -565,7 +736,6 @@
 				/* Oculta en móviles */
 			}
 		}
-
 
 
 		/* Contenedor de la galería */
@@ -663,7 +833,6 @@
 			padding-top: 10px;
 			/* Ajusta el padding superior si es necesario */
 		}
-
 
 
 		.countdown_area {
