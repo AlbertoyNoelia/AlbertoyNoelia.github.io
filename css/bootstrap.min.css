@@ -594,6 +594,14 @@ pre code {
     margin-left: auto
 }
 
+.container-header {
+    width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin: auto; /* Centrado horizontalmente */
+
+}
+
 @media (min-width:576px) {
     .container {
         max-width: 540px
