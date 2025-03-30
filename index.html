@@ -95,27 +95,22 @@
 	</div>
 
 	<div id="slide2" style="display: none;">
-		<!-- header-->
+		<!-- Header -->
 		<header>
 			<div class="header-area">
 
-				<div class="container">
-					<div class="row align-items-center">
-						<!-- Logo que se moverá a la izquierda -->
-						<div class="col-xl-3 col-lg-3 d-flex justify-content-start">
-							<div class="logo-img">
-								<a href="index.html">
-									<img src="img/logo.png" alt="" width="100">
-								</a>
-							</div>
-						</div>
-						<!-- Menú móvil -->
-						<div class="col-12">
-							<div class="mobile_menu d-block d-lg-none"></div>
-						</div>
+				<div class="container-header">
+					<!-- Logo alineado a la izquierda -->
+					<div class="logo-img">
+						<a href="index.html">
+							<img src="img/logo.png" alt="Logo" width="100">
+						</a>
 					</div>
 				</div>
-
+				<!-- Menú móvil alineado a la izquierda -->
+				<div class="col-12 d-flex justify-content-start">
+					<div class="mobile_menu d-block d-lg-none"></div>
+				</div>
 			</div>
 		</header>
 
@@ -170,47 +165,36 @@
 		<br>
 		<br>
 
-		<!-- Audio section -->
-		<div style="display: grid; place-items: center; height: 80px;">
-			<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
-		</div>
-		<!-- wedding_countdown -->
-		<div class="weeding_countdown_area">
+		<div class="container">
+			<div class="flower_fondo d-none d-lg-block">
+				<img src="img/appointment/flower.png" alt="">
+			</div>
+	
+		</div>	
+			<!-- Audio section -->
+			<div style="display: grid; place-items: center; height: 80px;">
+				<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
+			</div>
+			<div class="weeding_countdown_area position-relative">
+			<!-- wedding_countdown -->
 
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="section_title text-center">
-
 							<span>27 de Septiembre de 2025</span>
-
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xl-12">
-						<div id="clock" class="countdown_area counter_bg ">
+						<div id="clock" class="countdown_area counter_bg">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-
-		<!-- Frase especial después de la cuenta atrás -->
-		<div class="special_phrase_area">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12 text-center">
-						<div class="special_phrase_box">
-							<p class="special_phrase">"En este día tan especial, comeremos como enanos, bebemos como
-								elfos, y celebraremos el amor como lo harían los hobbits, rodeados de amigos y familia"
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<!--/ wedding_countdown -->
 
@@ -218,25 +202,39 @@
 		<div class="love_story_area">
 			<div class="container">
 				<div class="row">
-					<!-- Columna izquierda con foto -->
-					<div class="col-xl-4 col-md-6 col-lg-4">
-						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid">
-						<img src="img/gallery/8.jpg" alt="Foto de nosotros 1" class="img-fluid">
-						<img src="img/gallery/9.jpg" alt="Foto de nosotros 1" class="img-fluid">
+
+					<!-- Columna izquierda con fotos -->
+					<div class="col-xl-4 col-md-6 col-lg-4 love-story-images">
+						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid reveal-left">
+						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-fluid reveal-left">
+						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-fluid reveal-left">
+
 					</div>
+					<!-- Columna central con la historia -->
 					<div class="col-xl-4 col-md-6 col-lg-4">
 						<div class="weding_time_line text-center">
 							<div class="single_time_line">
 								<h3>El comienzo de nuestra historia</h3>
 								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos
 									que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la
-									mano</p>
+									mano
+								</p>
 							</div>
 							<div class="single_time_line">
 								<h3>Nuestro hogar</h3>
 								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos
 									construido un hogar lleno de amor, risas y momentos que quedarán para siempre en
 									nuestros corazones</p>
+
+							</div>
+							<div class="single_time_line">
+								<h3>Creciendo juntos</h3>
+								<p>A lo largo de los años, hemos crecido como personas y como pareja. Juntos hemos
+									enfrentado desafíos que nos han permitido madurar, aprender de nuestros errores y
+									crecer en nuestras propias metas y sueños. Cada reto nos ha hecho más fuertes y
+									unido aún más
+								</p>
+
 							</div>
 							<div class="single_time_line">
 								<h3>Las pedidas de mano</h3>
@@ -245,58 +243,70 @@
 							</div>
 							<div class="single_time_line">
 								<h3>El gran día</h3>
+								<p>Después de casi 8 años juntos, finalmente nos diremos el sí quiero, listos para
+									comenzar esta nueva etapa en nuestra vida</p>
 							</div>
 						</div>
 					</div>
-					<!-- Columna derecha con foto -->
-					<div class="col-xl-4 col-lg-4">
-						<img src="img/gallery/7.jpg" alt="Foto de nosotros 1" class="img-fluid">
-						<img src="img/gallery/10.jpg" alt="Foto de nosotros 1" class="img-fluid">
+
+					<!-- Columna derecha con fotos -->
+					<div class="col-xl-4 col-lg-4 love-story-images">
+						<img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-fluid reveal-right">
+						<img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-fluid reveal-right">
+						<img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-fluid reveal-right">
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--/ our_love-story -->
 
+		<!--/ our_love-story -->
+		<!-- Frase especial después de la cuenta atrás -->
+		<div class="special_phrase_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 text-center">
+						<div class="special_phrase_box">
+							<p class="special_phrase">"En este día tan especial, comeremos como enanos, bebemos como
+								elfos,
+								y celebraremos el amor como lo harían los hobbits, rodeados de amigos y familia"</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- program_details -->
 		<div class="program_details_area">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_1 text-center">
-							<div class="program_inner ">
-								<span>
-									12:45
-								</span>
+							<div class="program_inner">
+								<span>12:45</span>
 								<h3>Ceremonia</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>La ceremonia será en la Hacienda del Marqués (Bargas), un sitio único donde
+									comenzaremos nuestra vida juntos en este día tan especial</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_2 text-center">
-							<div class="program_inner ">
-								<span>
-									14:00
-								</span>
+							<div class="program_inner">
+								<span>14:00</span>
 								<h3>Catering y Banquete</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>Tras la ceremonia, nos reuniremos en la misma hacienda para disfrutar de un delicioso
+									catering y un banquete lleno de momentos únicos y sorpresas</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4">
 						<div class="single_program program_bg_3 text-center">
-							<div class="program_inner ">
-								<span>
-									19:00
-								</span>
+							<div class="program_inner">
+								<span>19:00</span>
 								<h3>Fiesta</h3>
-								<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered
-									alteration in some content of a page when looking at its layout. </p>
+								<p>¡La fiesta será épica sin tener que ir a ningún otro sitio! Prepárate para una noche
+									llena de energía, música y momentos que jamás olvidaremos</p>
 								<img src="img/program_details/ornaments.png" alt="">
 							</div>
 						</div>
@@ -304,6 +314,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--/ program_details -->
 
 		<!-- attend_area -->
@@ -326,7 +337,8 @@
 											<div class="form_heading text-center">
 												<h3>¿Vas a poder asistir?</h3>
 												<p>Por favor, especifica el número de acompañantes y si cogerás el bus
-													que facilitaremos desde Talavera de la Reina.</p>
+													que
+													facilitaremos desde Talavera de la Reina.</p>
 											</div>
 											<form id="attendanceForm">
 												<div class="row">
@@ -350,6 +362,7 @@
 															<option value="3">3 Acompañantes</option>
 															<option value="4">4 Acompañantes</option>
 															<option value="5">5 Acompañantes</option>
+
 														</select>
 													</div>
 
@@ -577,7 +590,7 @@
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/plugins.js"></script>
-
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
 
 
@@ -654,6 +667,74 @@
 		.boxed_btn3:hover {
 			background-color: #45a049;
 			/* Efecto hover */
+		}
+
+
+	<script>
+
+		// Inicializar ScrollReveal
+		const sr = ScrollReveal({
+			origin: 'left', // Dirección de la animación (izquierda)
+			distance: '100px', // Distancia del desplazamiento
+			duration: 600, // Duración de la animación en milisegundos
+			delay: 200, // Retraso antes de iniciar la animación
+			reset: true // Si la animación debe repetirse cada vez que el elemento entra en el viewport
+		});
+
+		// Aplicar animación a las imágenes que deben aparecer desde la izquierda
+		sr.reveal('.reveal-left', {
+			origin: 'left',
+			distance: '100px',
+			interval: 200 // Intervalo entre animaciones de elementos múltiples
+		});
+
+		// Aplicar animación a las imágenes que deben aparecer desde la derecha
+		sr.reveal('.reveal-right', {
+			origin: 'right',
+			distance: '100px',
+			interval: 200
+		});
+
+
+	</script>
+
+
+
+	<style>
+		/* Estado inicial de las imágenes: ocultas y desplazadas */
+		.reveal-left,
+		.reveal-right {
+			opacity: 0;
+			transform: translateX(-100px);
+			/* Para reveal-left; para reveal-right, usa translateX(100px); */
+			transition: opacity 0.6s ease, transform 0.6s ease;
+		}
+
+		/* Estado final de las imágenes: visibles en su posición original */
+		.reveal-left.visible,
+		.reveal-right.visible {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		.flower_fondo {
+			position: absolute;
+			/* Permite posicionar dentro del contenedor */
+			right: 0;
+			/* Alineado a la derecha */
+			bottom: 0;
+			/* Alineado abajo dentro del contenedor */
+			z-index: -1;
+			/* Lo coloca detrás del contenido */
+			max-width: 300px;
+			/* Controla el tamaño */
+		}
+
+		@media (max-width: 992px) {
+			.flower_fondo {
+				display: none;
+				/* Oculta en móviles */
+			}
 		}
 
 
@@ -752,30 +833,6 @@
 			padding-top: 10px;
 			/* Ajusta el padding superior si es necesario */
 		}
-
-		.add-to-calendar-container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 20px;
-			/* Espacio superior para separación */
-		}
-
-		add-to-calendar-button {
-			font-size: 16px;
-			background-color: #4CAF50;
-			/* Verde agradable */
-			color: white;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-
-		add-to-calendar-button:hover {
-			background-color: #45a049;
-			/* Efecto hover */
-		}
-
 
 
 		.countdown_area {
