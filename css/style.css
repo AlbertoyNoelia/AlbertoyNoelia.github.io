@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,600i,700,700i,800,800i,900|Petit+Formal+Script&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,600i,700,700i,800,800i,900|Petit+Formal+Script&display=swap");
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_extend.scss */
 .flex-center-start {
@@ -1573,7 +1572,7 @@ h3 {
 
 /* line 52, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
 .attending_area .main_attending_area .popup_box p {
-  font-size: 15px;
+  font-size: 16px;
   color: #727272;
   font-family: "Muli", sans-serif;
   margin-bottom: 34px;
@@ -1622,6 +1621,7 @@ h3 {
   padding: 15px;
   margin-bottom: 20px;
   font-family: "Muli", sans-serif;
+  font-size: 16px;
 }
 
 /* line 89, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
