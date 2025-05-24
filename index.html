@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<!-- <link rel="manifest" href="site.webmanifest"> -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<!-- Place favicon.ico in the root directory -->
@@ -165,105 +166,87 @@
 		<br>
 		<br>
 
-		<div class="container">
-			<div class="flower_fondo d-none d-lg-block">
+		<!-- Audio section -->
+		<div style="display: grid; place-items: center; height: 80px;">
+			<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
+		</div>
+		<div class="weeding_countdown_area position-relative">
+			<!-- wedding_countdown -->
+			<!-- <div class="flowaers_top d-none d-lg-block">
 				<img src="img/appointment/flower.png" alt="">
 			</div>
-	
-		</div>	
-			<!-- Audio section -->
-			<div style="display: grid; place-items: center; height: 80px;">
-				<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
-			</div>
-			<div class="weeding_countdown_area position-relative">
-  <!-- wedding_countdown -->
-  <div class="weeding_countdown_area">
-	<div class="flowaers_top d-none d-lg-block">
-		<img src="img/appointment/flower.png" alt="">
-	</div>
-	<div class="flowaers_bottom d-none d-lg-block">
-			<img src="img/appointment/flower.png" alt="">
-		</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12">
-				<div class="section_title text-center">
+			<div class="flowaers_bottom d-none d-lg-block">
 					<img src="img/appointment/flower.png" alt="">
-					<span>14. January. 2020</span>
-					<h3>THE. WEDDING. Countdown</h3>
+				</div>-->
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="section_title text-center">
+							<span>27 de Septiembre de 2025</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-12">
+						<div id="clock" class="countdown_area counter_bg">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xl-12">
-				<div id="clock" class="countdown_area counter_bg ">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--/ wedding_countdown -->
+
+
+		<!--/ wedding_countdown -->
 
 		<!-- our_love-story -->
 		<div class="love_story_area">
 			<div class="container">
-				<div class="row">
-
-					<!-- Columna izquierda con fotos -->
-					<div class="col-xl-4 col-md-6 col-lg-4 love-story-images">
-						<img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-fluid reveal-left">
-						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-fluid reveal-left">
-						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-fluid reveal-left">
-
-					</div>
-					<!-- Columna central con la historia -->
-					<div class="col-xl-4 col-md-6 col-lg-4">
-						<div class="weding_time_line text-center">
-							<div class="single_time_line">
-								<h3>El comienzo de nuestra historia</h3>
-								<p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos
-									que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la
-									mano
-								</p>
-							</div>
-							<div class="single_time_line">
-								<h3>Nuestro hogar</h3>
-								<p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos
-									construido un hogar lleno de amor, risas y momentos que quedarán para siempre en
-									nuestros corazones</p>
-
-							</div>
-							<div class="single_time_line">
-								<h3>Creciendo juntos</h3>
-								<p>A lo largo de los años, hemos crecido como personas y como pareja. Juntos hemos
-									enfrentado desafíos que nos han permitido madurar, aprender de nuestros errores y
-									crecer en nuestras propias metas y sueños. Cada reto nos ha hecho más fuertes y
-									unido aún más
-								</p>
-
-							</div>
-							<div class="single_time_line">
-								<h3>Las pedidas de mano</h3>
-								<p>Después de 6 años juntos, Alberto pidió la mano a Noelia en Florencia, y en un giro
-									inesperado, también Noelia se lo pidió a él</p>
-							</div>
-							<div class="single_time_line">
-								<h3>El gran día</h3>
-								<p>Después de casi 8 años juntos, finalmente nos diremos el sí quiero, listos para
-									comenzar esta nueva etapa en nuestra vida</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Columna derecha con fotos -->
-					<div class="col-xl-4 col-lg-4 love-story-images">
-						<img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-fluid reveal-right">
-						<img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-fluid reveal-right">
-						<img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-fluid reveal-right">
-					</div>
+			  <div class="row">
+		  
+				<!-- Columna izquierda con fotos -->
+				<div class="col-lg-4 col-md-12 love-story-images">
+				  <img src="img/gallery/6.jpg" alt="Foto de nosotros 1" class="img-responsive" style="margin-bottom: 20px;">
+				  <img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-responsive" style="margin-bottom: 20px;">
+				  <img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-responsive" style="margin-bottom: 20px;">
 				</div>
+		  
+				<!-- Columna central con la historia -->
+				<div class="col-lg-4 col-md-12">
+				  <div class="weding_time_line text-center">
+					<div class="single_time_line">
+					  <h3>El comienzo de nuestra historia</h3>
+					  <p>Nos conocimos en Ciudad Real mientras estudiábamos. En tan solo dos meses, supimos que estábamos hechos el uno para el otro, y comenzamos esta hermosa aventura de la mano</p>
+					</div>
+					<div class="single_time_line">
+					  <h3>Nuestro hogar</h3>
+					  <p>Decidimos mudarnos juntos, acompañados de Espi, Duse y Curro. Desde entonces, hemos construido un hogar lleno de amor, risas y momentos que quedarán para siempre en nuestros corazones</p>
+					</div>
+					<div class="single_time_line">
+					  <h3>Creciendo juntos</h3>
+					  <p>A lo largo de los años, hemos crecido como personas y como pareja. Juntos hemos enfrentado desafíos que nos han permitido madurar, aprender de nuestros errores y crecer en nuestras propias metas y sueños. Cada reto nos ha hecho más fuertes y unido aún más</p>
+					</div>
+					<div class="single_time_line">
+					  <h3>Las pedidas de mano</h3>
+					  <p>Después de 6 años juntos, Alberto pidió la mano a Noelia en Florencia, y en un giro inesperado, también Noelia se lo pidió a él</p>
+					</div>
+					<div class="single_time_line">
+					  <h3>El gran día</h3>
+					  <p>Después de casi 8 años juntos, finalmente nos diremos el sí quiero, listos para comenzar esta nueva etapa en nuestra vida</p>
+					</div>
+				  </div>
+				</div>
+		  
+				<!-- Columna derecha con fotos -->
+				<div class="col-lg-4 col-md-12 love-story-images">
+				  <img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-responsive" style="margin-bottom: 20px;">
+				  <img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-responsive" style="margin-bottom: 20px;">
+				  <img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-responsive" style="margin-bottom: 20px;">
+				</div>
+		  
+			  </div>
 			</div>
-		</div>
+		  </div>
+		  
 
 		<!--/ our_love-story -->
 		<!-- Frase especial después de la cuenta atrás -->
@@ -678,7 +661,7 @@
 		/* Estado inicial de las imágenes: ocultas y desplazadas */
 		.reveal-left,
 		.reveal-right {
-			opacity: 0;
+			/* opacity: 0; */
 			transform: translateX(-100px);
 			/* Para reveal-left; para reveal-right, usa translateX(100px); */
 			transition: opacity 0.6s ease, transform 0.6s ease;
@@ -835,34 +818,32 @@
 		}
 	</style>
 
-	
 
-		
+
+
+<!--
+<script src="https://unpkg.com/scrollreveal"></script>
 <script>
-		
-const sr = ScrollReveal({
-	origin: 'left', // Dirección de la animación (izquierda)
-	distance: '100px', // Distancia del desplazamiento
-	duration: 600, // Duración de la animación en milisegundos
-	delay: 200, // Retraso antes de iniciar la animación
-	reset: true // Si la animación debe repetirse cada vez que el elemento entra en el viewport
-});
+	document.addEventListener("DOMContentLoaded", function () {
+		const sr = ScrollReveal({
+			distance: '100px',
+			duration: 600,
+			delay: 200,
+			reset: true
+		});
 
+		sr.reveal('.reveal-left', {
+			origin: 'left',
+			interval: 200
+		});
 
-sr.reveal('.reveal-left', {
-	origin: 'left',
-	distance: '100px',
-	interval: 200 // Intervalo entre animaciones de elementos múltiples
-});
-
-
-sr.reveal('.reveal-right', {
-	origin: 'right',
-	distance: '100px',
-	interval: 200
-});
-</script>
-<script>
+		sr.reveal('.reveal-right', {
+			origin: 'right',
+			interval: 200
+		});
+	});
+</script> -->
+	<script>
 		// Controlador de las imágenes
 		let index = 0;
 		const slides = document.querySelectorAll(".gallery_slide");
