@@ -1429,8 +1429,8 @@ h3 {
 
 /* line 10, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_details_area {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 60px;
+  padding-top: 80px;
 }
 
 /* line 13, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1474,7 +1474,7 @@ h3 {
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
 .attending_area {
   padding-top: 95px;
-  padding-bottom: 280px;
+  padding-bottom: 50px;
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
@@ -1997,7 +1997,7 @@ h3 {
   background: #fff;
   width: 616px;
   max-width: 616px;
-  padding: 54px 60px 54px 60px;
+  padding-top: -20px;
 }
 
 @media (max-width: 767px) {

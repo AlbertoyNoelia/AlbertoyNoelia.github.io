@@ -31,23 +31,23 @@
 
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
-	  const observer = new IntersectionObserver((entries, obs) => {
-		entries.forEach(entry => {
-		  if (entry.isIntersecting) {
-			entry.target.classList.add("reveal-visible");
-			obs.unobserve(entry.target); // Solo una vez
-		  }
+		const observer = new IntersectionObserver((entries, obs) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("reveal-visible");
+					obs.unobserve(entry.target); // Solo una vez
+				}
+			});
+		}, {
+			threshold: 0.1
 		});
-	  }, {
-		threshold: 0.1
-	  });
-  
-	  document.querySelectorAll(".reveal-left, .reveal-right").forEach(el => {
-		observer.observe(el);
-	  });
+
+		document.querySelectorAll(".reveal-left, .reveal-right").forEach(el => {
+			observer.observe(el);
+		});
 	});
-  </script>
-  
+</script>
+
 
 <body>
 	<!--[if lte IE 9]>
@@ -60,65 +60,74 @@
 	<div id="slide">
 		<header>
 			<div class="header-area">
-				<div id="sticky-header">
-					<div class="container">
-						<div class="justify-content-center"> <!-- Alinea los elementos en el centro -->
-							<div class="logo-img text-center"> <!-- Elimina el estilo "margin: 0 auto;" -->
-								<a href="index.html">
-									<img src="img/logo2.png" alt="">
-								</a>
-							</div>
-
-							<div class="col-12">
-								<!--<div class="mobile_menu d-block d-lg-none"></div>-->
-							</div>
-						</div>
+			  <div id="sticky-header">
+				<div class="container">
+				  <div class="justify-content-center">
+					<div class="logo-img text-center">
+					  <a href="index.html">
+						<img src="img/logo2.png" alt="" style="max-width: 180px; margin: 10px auto; display: block;">
+					  </a>
 					</div>
+					<div class="col-12"></div>
+				  </div>
 				</div>
+			  </div>
 			</div>
-		</header>
-
-		<!--/ header-->
-
+		  </header>
+	  
 		<!-- bradcam_area -->
-		<div class="bradcam_area text-center bradcam_bg overlay3">
-			<div class="bradcam_text">
-				<h3 style="font-size: 32px; font-weight: bold; font-family: 'Petit Formal Script', cursive;
-	@media (max-width: 992px){font-size:30px;}
-	@media (max-width: 768px){font-size:24px;}
-	@media (max-width: 480px){font-size:20px;}">
-					Comienza una nueva aventura...
-				</h3>
-				<p style="margin-bottom: 30px; font-family: 'Petit Formal Script', cursive; font-size: 20px; 
-@media (max-width: 992px) { font-size: 18px; }
-@media (max-width: 768px) { font-size: 16px; }
-@media (max-width: 480px) { font-size: 14px; }">
-					¿Quieres ser parte de ella?</p>
-
-			</div>
+		<div class="bradcam_area text-center bradcam_bg overlay3" style="padding: 40px 0 20px 0;">
+		  <div class="bradcam_text">
+			<h3 style="font-weight: bold; font-family: 'Petit Formal Script', cursive; font-size: 42px; margin-bottom: 10px;"
+				class="responsive-title">
+			  Comienza una nueva aventura...
+			</h3>
+			<p style="margin-bottom: 20px; font-family: 'Petit Formal Script', cursive; font-size: 20px;">
+			  ¿Quieres ser parte de ella?
+			</p>
+		  </div>
 		</div>
-
+	  
 		<div class="slider_area">
-			<div class="slider_area_inner slider_bg_2 overlay2">
-				<div>
-					<a class="play-btn" id="ocultarSlide"></a>
-				</div>
+		  <div class="slider_area_inner slider_bg_2 overlay2">
+			<div>
+			  <a class="play-btn" id="ocultarSlide"></a>
 			</div>
+		  </div>
 		</div>
+	  
 		<!-- footer_start -->
 		<footer class="footer" style="background-color: white;">
-			<div class="footer_top">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-12">
-							<div class="quick_links">
-
-							</div>
-						</div>
-					</div>
+		  <div class="footer_top">
+			<div class="container">
+			  <div class="row">
+				<div class="col-xl-12">
+				  <div class="quick_links"></div>
 				</div>
+			  </div>
 			</div>
+		  </div>
 		</footer>
+	  </div>
+	  
+	  <style>
+		@media (max-width: 992px) {
+		  .responsive-title {
+			font-size: 30px !important;
+		  }
+		}
+		@media (max-width: 768px) {
+		  .responsive-title {
+			font-size: 24px !important;
+		  }
+		}
+		@media (max-width: 480px) {
+		  .responsive-title {
+			font-size: 20px !important;
+		  }
+		}
+	  </style>
+	  
 
 		<!-- footer_end --><!-- JS here -->
 	</div>
@@ -171,35 +180,76 @@
 
 		<br>
 		<!--/ header-->
-		<!-- Galería de Imágenes -->
-		<div class="gallery_container" style="overflow: hidden; width: 100vw; height: 100vh; position: relative;">
-			<div class="gallery_slider" id="gallerySlider" style="display: flex; transition: transform 1s ease-in-out;">
-				<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1"
-					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-				<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2"
-					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-				<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3"
-					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-				<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4"
-					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-				<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5"
-					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+		
+		<div class="weeding_countdown_area position-relative">
+			<!-- wedding_countdown -->
+			<!-- <div class="flowaers_top d-none d-lg-block">
+				<img src="img/appointment/flower.png" alt="">
 			</div>
-			<!-- Indicadores -->
-			<div class="gallery_indicators"
-				style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
-				<span class="dot active" data-index="0"></span>
-				<span class="dot" data-index="1"></span>
-				<span class="dot" data-index="2"></span>
-				<span class="dot" data-index="3"></span>
-				<span class="dot" data-index="4"></span>
-			</div>
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
+			<div class="flowaers_bottom d-none d-lg-block">
+					<img src="img/appointment/flower.png" alt="">
+				</div>-->
+				<div class="container">
+					<div class="row">
+					  <div class="col-xl-12">
+						<div class="section_title text-center">
+						  <span style="font-family: 'Petit Formal Script', cursive; margin-top: auto; font-size: 26px;">
+							27 de Septiembre de 2025
+						  </span>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xl-12">
+						<div id="clock" class="countdown_area counter_bg"></div>
+					  </div>
+					</div>
+				  </div>
+				  
+				  </div>
+				  <!--/ wedding_countdown -->
+				  
+				  <div style="text-align: center; margin: 0px 0 0px 0; font-family: 'Muli', sans-serif;">
+					<h3 style="font-weight: bold; color: #99ac9c; font-size: 18px;">Añadir al calendario</h3>
+					<p style="margin-bottom: 15px; font-size: 14px;">Guarda la fecha para no perderte nuestra boda</p>
+					<div style="display: flex; justify-content: center;">
+					  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Alberto+y+Noelia&dates=20250927T104500Z/20250927T215900Z&details=%C2%A1Nos+casamos!+%C3%9Anete+a+la+celebraci%C3%B3n+en+la+Hacienda+del+Marqu%C3%A9s.&location=Hacienda+del+Marqu%C3%A9s,+Bargas,+Toledo&sf=true&output=xml"
+						 target="_blank" rel="noopener noreferrer"
+						 style="background-color: #99ac9c; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; text-decoration: none;">
+						📆 Añadir a Google Calendar
+					  </a>
+					</div>
+				  </div>
+				  
+				  
 
+<!-- Galería de Imágenes con padding exterior -->
+<div style="padding: 20px;">
+	<div class="gallery_container" style="overflow: hidden; height: 60vh; position: relative; margin: 40px auto; max-width: 900px; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+	  <div class="gallery_slider" id="gallerySlider" style="display: flex; transition: transform 1s ease-in-out;">
+		<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1"
+		  style="object-fit: cover; width: 100%; height: 60vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2"
+		  style="object-fit: cover; width: 100%; height: 60vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3"
+		  style="object-fit: cover; width: 100%; height: 60vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4"
+		  style="object-fit: cover; width: 100%; height: 60vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5"
+		  style="object-fit: cover; width: 100%; height: 60vh; display: block; flex-shrink: 0;">
+	  </div>
+	  <!-- Indicadores -->
+	  <div class="gallery_indicators"
+		style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+		<span class="dot active" data-index="0"></span>
+		<span class="dot" data-index="1"></span>
+		<span class="dot" data-index="2"></span>
+		<span class="dot" data-index="3"></span>
+		<span class="dot" data-index="4"></span>
+	  </div>
+	</div>
+  </div>
+  
 		<!-- Audio section -->
 		<div style="text-align: center; margin: 40px 0; font-family: 'Muli', sans-serif;">
 			<h3 style="font-weight: bold; color: #99ac9c;">Escucha la banda sonora de nuestra vida</h3>
@@ -210,47 +260,7 @@
 			<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
 		</div>
 
-		<div class="weeding_countdown_area position-relative">
-			<!-- wedding_countdown -->
-			<!-- <div class="flowaers_top d-none d-lg-block">
-				<img src="img/appointment/flower.png" alt="">
-			</div>
-			<div class="flowaers_bottom d-none d-lg-block">
-					<img src="img/appointment/flower.png" alt="">
-				</div>-->
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="section_title text-center">
-							<span style="font-family: 'Petit Formal Script', cursive; margin-top: auto;">27 de
-								Septiembre de 2025</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-12">
-						<div id="clock" class="countdown_area counter_bg">
-						</div>
-					</div>
-				</div>
-			</div>
 
-		</div>
-
-
-		<!--/ wedding_countdown -->
-
-		<div style="text-align: center; margin: 40px 0; font-family: 'Muli', sans-serif;">
-			<h3 style="font-weight: bold; color: #99ac9c;">Añadir al calendario</h3>
-			<p style="margin-bottom: 20px;">Guarda la fecha para no perderte nuestra boda</p>
-			<div style="display: flex; justify-content: center;">
-				<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Alberto+y+Noelia&dates=20250927T104500Z/20250927T215900Z&details=%C2%A1Nos+casamos!+%C3%9Anete+a+la+celebraci%C3%B3n+en+la+Hacienda+del+Marqu%C3%A9s.&location=Hacienda+del+Marqu%C3%A9s,+Bargas,+Toledo&sf=true&output=xml"
-					target="_blank" rel="noopener noreferrer"
-					style="background-color: #99ac9c; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; text-decoration: none;">
-					📆 Añadir a Google Calendar
-				</a>
-			</div>
-		</div>
 
 
 		<!-- our_love-story -->
@@ -318,9 +328,9 @@
 					<!-- Columna derecha con fotos -->
 					<!-- Columna derecha -->
 					<div class="col-lg-4 col-md-12 love-story-images">
-						<img src="img/gallery/7.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
-						<img src="img/gallery/10.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
 						<img src="img/gallery/11.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
+						<img src="img/gallery/10.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
+						<img src="img/gallery/7.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
 					</div>
 				</div>
 			</div>
@@ -328,21 +338,22 @@
 
 
 		<!--/ our_love-story -->
-		<!-- Frase especial después de la cuenta atrás -->
-		<div class="special_phrase_area">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12 text-center">
-						<div class="special_phrase_box">
-							<p class="special_phrase"
-								style="font-family: 'Petit Formal Script', cursive; color: #99ac9c; font-size: 16px;">
-								"Comeremos como enanos, beberemos como elfos y celebraremos como hobbits, rodeados de
-								los nuestros"</p>
-						</div>
-					</div>
-				</div>
-			</div>
+<!-- Frase especial después de la galería -->
+<div class="special_phrase_area" style="margin-top: 30px;">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xl-12 text-center">
+		  <div class="special_phrase_box">
+			<p class="special_phrase"
+			  style="font-family: 'Petit Formal Script', cursive; color: #99ac9c; font-size: 16px;">
+			  "Comeremos como enanos, beberemos como elfos y celebraremos como hobbits, rodeados de los nuestros"
+			</p>
+		  </div>
 		</div>
+	  </div>
+	</div>
+  </div>
+  
 
 		<!-- program_details -->
 		<div class="program_details_area">
@@ -400,7 +411,7 @@
 
 		<!-- attend_area -->
 		<!-- ================ attending section start ================= -->
-		<section class="attending_area">
+		<section class="attending_area" style="margin-bottom: 10px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
@@ -417,11 +428,8 @@
 										<div class="popup_inner">
 											<div class="form_heading text-center">
 												<h3 style="font-weight: bold;">¿Vas a poder asistir?</h3>
-												<p style="text-align: justify;">Por favor, especifica el número de
-													acompañantes y si cogerás el bus
-													que
-													facilitaremos desde Talavera de la Reina (hora y sitio de recogida
-													del bus pendiente de confirmar).</p>
+												<p style="text-align: justify;">Por favor, indica <strong>cuántos acompañantes asistirán</strong> y si <strong>utilizarás el bus desde Talavera de la Reina</strong> (la <strong>hora y el lugar de recogida</strong> están pendientes de confirmar).</p>
+
 											</div>
 											<form id="attendanceForm">
 												<div class="row">
@@ -593,26 +601,64 @@
 
 		</script>
 
+<!-- Frase especial después de la galería -->
 
-		<!-- ================ location section start ================= -->
-		<section class="location_area" style="display: grid; place-items: center; font-family: 'Muli', sans-serif;">
-			<div class="location_info">
-				<div class="location_inner">
-					<div class="location_top text-center">
-						<h3
-							style="font-family: 'Petit Formal Script', cursive; font-size: 36px; font-weight: bold; color: #99ac9c;">
-							Localización</h3>
-						<p style="font-size: 16px; text-align: center;">Hacienda del Marqués, Bargas, Toledo</p>
-					</div>
-					<div class="address_info justify-content-between">
-						<div class="single_address text-center">
-							<h4 style="font-size: 18px; font-weight: bold;">¿A qué hora debo estar?</h4>
-							<p style="font-size: 16px; font-weight: bold;">12:45pm</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+<div class="special_phrase_area" style="margin: 10px 0 80px 0;">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xl-12 text-center">
+		  <div class="special_phrase_box" style="padding: 30px 10px;">
+			<p class="special_phrase"
+			   style="font-family: 'Petit Formal Script', cursive; color: #99ac9c; font-size: 13px; line-height: 1.6; font-weight: normal;">
+			  <span style="font-weight: bold;">Vuestra presencia es el mejor regalo,</span><br>
+			  pero si además queréis tener un detalle con nosotros,<br>
+			  podéis hacerlo con una aportación en esta cuenta:<br><br>
+			  <span style="font-weight: bold;">ES94 0073 0100 5708 1360 6005</span>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  
+<!-- ================ location section start ================= -->
+<section class="location_area" style="display: grid; place-items: center; font-family: 'Muli', sans-serif;">
+	<div class="location_info">
+	  <div class="location_inner">
+		<div class="location_top text-center">
+		  <h3
+			style="font-family: 'Petit Formal Script', cursive; font-size: 36px; font-weight: bold; color: #99ac9c;">
+			Localización
+		  </h3>
+		  <p style="font-size: 16px; text-align: center;">Hacienda del Marqués, Bargas, Toledo</p>
+		</div>
+		<div class="address_info justify-content-between">
+		  <div class="single_address text-center">
+			<h4 style="font-size: 18px; font-weight: bold;">¿A qué hora debo estar?</h4>
+			<p style="font-size: 16px; font-weight: bold;">12:45pm</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <style>
+	@media (max-width: 767px) {
+	  .location_area {
+		margin-top: 0px !important;
+	  }
+	}
+  
+	@media (min-width: 768px) {
+	  .location_area {
+		margin-top: 200px !important;
+	  }
+	}
+  </style>
+  
+  
+  
 
 		<!-- ================ location section end ================= -->
 
@@ -703,10 +749,6 @@
 			margin-bottom: 10px;
 		}
 
-		.attending_area .row>div {
-			margin-bottom: 20px;
-		}
-
 		.boxed_btn3:hover {
 			background-color: #3e8e41;
 			/* Un verde más oscuro */
@@ -732,24 +774,24 @@
 
 		/* Estado inicial de las imágenes: ocultas y desplazadas */
 		.reveal-left,
-.reveal-right {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 1s ease, transform 1s ease;
-}
+		.reveal-right {
+			opacity: 0;
+			transform: translateX(0);
+			transition: opacity 1s ease, transform 1s ease;
+		}
 
-.reveal-left {
-  transform: translateX(-100px);
-}
+		.reveal-left {
+			transform: translateX(-100px);
+		}
 
-.reveal-right {
-  transform: translateX(100px);
-}
+		.reveal-right {
+			transform: translateX(100px);
+		}
 
-.reveal-visible {
-  opacity: 1;
-  transform: translateX(0);
-}
+		.reveal-visible {
+			opacity: 1;
+			transform: translateX(0);
+		}
 
 		.flower_fondo {
 			position: absolute;
@@ -890,7 +932,7 @@
 	</style>
 
 
-  
+
 
 	<script>
 		// Controlador de las imágenes
