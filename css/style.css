@@ -1362,7 +1362,7 @@ h3 {
 
 /* line 23, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_wedding_counter.scss */
 .weeding_countdown_area .countdown_area {
-  padding: 35px 35px 50px 35px;
+  padding: 35px;
   background-size: cover;
   background-position: bottom;
 }
@@ -1379,7 +1379,7 @@ h3 {
 
   /* line 28, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_wedding_counter.scss */
   .weeding_countdown_area .countdown_area .countdown_wrap {
-    display: block !important;
+    display: flex !important;
   }
 }
 
