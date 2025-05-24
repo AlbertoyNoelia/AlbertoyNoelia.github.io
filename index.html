@@ -151,24 +151,24 @@
 
 		<br>
 		<!--/ header-->
-		<!-- Galería de Imágenes -->
-		<div class="gallery_container">
-			<div class="gallery_slider">
-				<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1">
-				<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2">
-				<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3">
-				<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4">
-				<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5">
-			</div>
-			<!-- Indicadores -->
-			<div class="gallery_indicators">
-				<span class="dot active"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-			</div>
-		</div>
+<!-- Galería de Imágenes -->
+<div class="gallery_container" style="overflow: hidden; width: 100vw; height: 100vh; position: relative;">
+	<div class="gallery_slider" id="gallerySlider" style="display: flex; transition: transform 1s ease-in-out;">
+		<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+		<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+	</div>
+	<!-- Indicadores -->
+	<div class="gallery_indicators" style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+		<span class="dot active" data-index="0"></span>
+		<span class="dot" data-index="1"></span>
+		<span class="dot" data-index="2"></span>
+		<span class="dot" data-index="3"></span>
+		<span class="dot" data-index="4"></span>
+	</div>
+</div>
 		<br>
 		<br>
 		<br>
