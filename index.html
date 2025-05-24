@@ -176,27 +176,33 @@
 				<audio id="myAudio" src="audio/cancion.mp3" controls></audio>
 			</div>
 			<div class="weeding_countdown_area position-relative">
-			<!-- wedding_countdown -->
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="section_title text-center">
-							<span>27 de Septiembre de 2025</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-12">
-						<div id="clock" class="countdown_area counter_bg">
-						</div>
-					</div>
+  <!-- wedding_countdown -->
+  <div class="weeding_countdown_area">
+	<div class="flowaers_top d-none d-lg-block">
+		<img src="img/appointment/flower.png" alt="">
+	</div>
+	<div class="flowaers_bottom d-none d-lg-block">
+			<img src="img/appointment/flower.png" alt="">
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="section_title text-center">
+					<img src="img/appointment/flower.png" alt="">
+					<span>14. January. 2020</span>
+					<h3>THE. WEDDING. Countdown</h3>
 				</div>
 			</div>
 		</div>
-
-
-		<!--/ wedding_countdown -->
+		<div class="row">
+			<div class="col-xl-12">
+				<div id="clock" class="countdown_area counter_bg ">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ wedding_countdown -->
 
 		<!-- our_love-story -->
 		<div class="love_story_area">
@@ -669,38 +675,6 @@
 			/* Efecto hover */
 		}
 
-
-	<script>
-
-		// Inicializar ScrollReveal
-		const sr = ScrollReveal({
-			origin: 'left', // Dirección de la animación (izquierda)
-			distance: '100px', // Distancia del desplazamiento
-			duration: 600, // Duración de la animación en milisegundos
-			delay: 200, // Retraso antes de iniciar la animación
-			reset: true // Si la animación debe repetirse cada vez que el elemento entra en el viewport
-		});
-
-		// Aplicar animación a las imágenes que deben aparecer desde la izquierda
-		sr.reveal('.reveal-left', {
-			origin: 'left',
-			distance: '100px',
-			interval: 200 // Intervalo entre animaciones de elementos múltiples
-		});
-
-		// Aplicar animación a las imágenes que deben aparecer desde la derecha
-		sr.reveal('.reveal-right', {
-			origin: 'right',
-			distance: '100px',
-			interval: 200
-		});
-
-
-	</script>
-
-
-
-	<style>
 		/* Estado inicial de las imágenes: ocultas y desplazadas */
 		.reveal-left,
 		.reveal-right {
@@ -861,7 +835,34 @@
 		}
 	</style>
 
-	<script>
+	
+
+		
+<script>
+		
+const sr = ScrollReveal({
+	origin: 'left', // Dirección de la animación (izquierda)
+	distance: '100px', // Distancia del desplazamiento
+	duration: 600, // Duración de la animación en milisegundos
+	delay: 200, // Retraso antes de iniciar la animación
+	reset: true // Si la animación debe repetirse cada vez que el elemento entra en el viewport
+});
+
+
+sr.reveal('.reveal-left', {
+	origin: 'left',
+	distance: '100px',
+	interval: 200 // Intervalo entre animaciones de elementos múltiples
+});
+
+
+sr.reveal('.reveal-right', {
+	origin: 'right',
+	distance: '100px',
+	interval: 200
+});
+</script>
+<script>
 		// Controlador de las imágenes
 		let index = 0;
 		const slides = document.querySelectorAll(".gallery_slide");
