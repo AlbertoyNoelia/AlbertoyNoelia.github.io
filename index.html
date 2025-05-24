@@ -29,6 +29,26 @@
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const observer = new IntersectionObserver((entries, obs) => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) {
+			entry.target.classList.add("reveal-visible");
+			obs.unobserve(entry.target); // Solo una vez
+		  }
+		});
+	  }, {
+		threshold: 0.1
+	  });
+  
+	  document.querySelectorAll(".reveal-left, .reveal-right").forEach(el => {
+		observer.observe(el);
+	  });
+	});
+  </script>
+  
+
 <body>
 	<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -151,24 +171,30 @@
 
 		<br>
 		<!--/ header-->
-<!-- Galería de Imágenes -->
-<div class="gallery_container" style="overflow: hidden; width: 100vw; height: 100vh; position: relative;">
-	<div class="gallery_slider" id="gallerySlider" style="display: flex; transition: transform 1s ease-in-out;">
-		<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-		<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-		<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-		<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-		<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5" style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
-	</div>
-	<!-- Indicadores -->
-	<div class="gallery_indicators" style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
-		<span class="dot active" data-index="0"></span>
-		<span class="dot" data-index="1"></span>
-		<span class="dot" data-index="2"></span>
-		<span class="dot" data-index="3"></span>
-		<span class="dot" data-index="4"></span>
-	</div>
-</div>
+		<!-- Galería de Imágenes -->
+		<div class="gallery_container" style="overflow: hidden; width: 100vw; height: 100vh; position: relative;">
+			<div class="gallery_slider" id="gallerySlider" style="display: flex; transition: transform 1s ease-in-out;">
+				<img src="img/gallery/1.jpg" class="gallery_slide" alt="Imagen 1"
+					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+				<img src="img/gallery/2.jpg" class="gallery_slide" alt="Imagen 2"
+					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+				<img src="img/gallery/3.jpg" class="gallery_slide" alt="Imagen 3"
+					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+				<img src="img/gallery/4.jpg" class="gallery_slide" alt="Imagen 4"
+					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+				<img src="img/gallery/5.jpg" class="gallery_slide" alt="Imagen 5"
+					style="object-fit: cover; width: 100vw; height: 100vh; display: block; flex-shrink: 0;">
+			</div>
+			<!-- Indicadores -->
+			<div class="gallery_indicators"
+				style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+				<span class="dot active" data-index="0"></span>
+				<span class="dot" data-index="1"></span>
+				<span class="dot" data-index="2"></span>
+				<span class="dot" data-index="3"></span>
+				<span class="dot" data-index="4"></span>
+			</div>
+		</div>
 		<br>
 		<br>
 		<br>
@@ -196,7 +222,8 @@
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="section_title text-center">
-							<span style="font-family: 'Petit Formal Script', cursive; margin-top: auto;">27 de Septiembre de 2025</span>
+							<span style="font-family: 'Petit Formal Script', cursive; margin-top: auto;">27 de
+								Septiembre de 2025</span>
 						</div>
 					</div>
 				</div>
@@ -232,14 +259,13 @@
 				<div class="row">
 
 					<!-- Columna izquierda con fotos -->
+					<!-- Columna izquierda -->
 					<div class="col-lg-4 col-md-12 love-story-images">
-						<img src="img/gallery/6.JPG" alt="Foto de nosotros 1" class="img-responsive"
-							style="margin-bottom: 20px;">
-						<img src="img/gallery/8.jpg" alt="Foto de nosotros 2" class="img-responsive"
-							style="margin-bottom: 20px;">
-						<img src="img/gallery/9.jpg" alt="Foto de nosotros 3" class="img-responsive"
-							style="margin-bottom: 20px;">
+						<img src="img/gallery/6.JPG" class="img-responsive reveal-left" style="margin-bottom: 20px;">
+						<img src="img/gallery/8.jpg" class="img-responsive reveal-left" style="margin-bottom: 20px;">
+						<img src="img/gallery/9.jpg" class="img-responsive reveal-left" style="margin-bottom: 20px;">
 					</div>
+
 
 					<!-- Columna central con la historia -->
 					<div class="col-lg-4 col-md-12">
@@ -289,17 +315,13 @@
 						</div>
 					</div>
 
-
 					<!-- Columna derecha con fotos -->
+					<!-- Columna derecha -->
 					<div class="col-lg-4 col-md-12 love-story-images">
-						<img src="img/gallery/7.jpg" alt="Foto de nosotros 4" class="img-responsive"
-							style="margin-bottom: 20px;">
-						<img src="img/gallery/10.jpg" alt="Foto de nosotros 5" class="img-responsive"
-							style="margin-bottom: 20px;">
-						<img src="img/gallery/11.jpg" alt="Foto de nosotros 6" class="img-responsive"
-							style="margin-bottom: 20px;">
+						<img src="img/gallery/7.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
+						<img src="img/gallery/10.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
+						<img src="img/gallery/11.jpg" class="img-responsive reveal-right" style="margin-bottom: 20px;">
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -314,7 +336,8 @@
 						<div class="special_phrase_box">
 							<p class="special_phrase"
 								style="font-family: 'Petit Formal Script', cursive; color: #99ac9c; font-size: 16px;">
-								"Comeremos como enanos, beberemos como elfos y celebraremos como hobbits, rodeados de los nuestros"</p>
+								"Comeremos como enanos, beberemos como elfos y celebraremos como hobbits, rodeados de
+								los nuestros"</p>
 						</div>
 					</div>
 				</div>
@@ -330,7 +353,8 @@
 							<div class="program_inner">
 								<span style="font-size: 26px;"><strong>12:45</strong></span>
 								<h3 style="font-family: 'Petit Formal Script', cursive; font-size: 22px;">
-									<strong>Ceremonia</strong></h3>
+									<strong>Ceremonia</strong>
+								</h3>
 								<p style="text-align: justify;">La ceremonia será en la <strong>Hacienda del Marqués
 										(Bargas)</strong>, un sitio único donde comenzaremos nuestra vida juntos en este
 									día tan especial</p>
@@ -343,7 +367,8 @@
 							<div class="program_inner">
 								<span style="font-size: 26px;"><strong>14:00</strong></span>
 								<h3 style="font-family: 'Petit Formal Script', cursive; font-size: 22px;">
-									<strong>Catering y Banquete</strong></h3>
+									<strong>Catering y Banquete</strong>
+								</h3>
 								<p style="text-align: justify;">Tras la ceremonia, <strong>en la misma
 										hacienda</strong>, disfrutaremos de un delicioso catering y un banquete lleno de
 									momentos únicos y sorpresas</p>
@@ -356,7 +381,8 @@
 							<div class="program_inner">
 								<span style="font-size: 26px;"><strong>18:00</strong></span>
 								<h3 style="font-family: 'Petit Formal Script', cursive; font-size: 22px;">
-									<strong>Fiesta</strong></h3>
+									<strong>Fiesta</strong>
+								</h3>
 								<p style="text-align: justify;">¡La fiesta será épica sin tener que ir a <strong>ningún
 										otro sitio</strong>! Prepárate para una noche llena de <strong>energía, música y
 										momentos mágicos inolvidables</strong></p>
@@ -391,7 +417,8 @@
 										<div class="popup_inner">
 											<div class="form_heading text-center">
 												<h3 style="font-weight: bold;">¿Vas a poder asistir?</h3>
-												<p style="text-align: justify;">Por favor, especifica el número de acompañantes y si cogerás el bus
+												<p style="text-align: justify;">Por favor, especifica el número de
+													acompañantes y si cogerás el bus
 													que
 													facilitaremos desde Talavera de la Reina (hora y sitio de recogida
 													del bus pendiente de confirmar).</p>
@@ -590,17 +617,15 @@
 		<!-- ================ location section end ================= -->
 
 		<!-- Map section -->
-<div class="container-fluid p-0" style="margin-bottom: 20px;">
-	<div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.3781090315438!2d-4.067317822726671!3d39.93293128494093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41e14d67857467%3A0x185720dd32ea01a!2sHacienda%20del%20Marques!5e0!3m2!1ses!2ses!4v1710163265255!5m2!1ses!2ses"
-			style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-			allowfullscreen="" loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade">
-		</iframe>
-	</div>
-</div>
-
+		<div class="container-fluid p-0" style="margin-bottom: 20px;">
+			<div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.3781090315438!2d-4.067317822726671!3d39.93293128494093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41e14d67857467%3A0x185720dd32ea01a!2sHacienda%20del%20Marques!5e0!3m2!1ses!2ses!4v1710163265255!5m2!1ses!2ses"
+					style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen=""
+					loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+		</div>
 
 
 
@@ -707,19 +732,24 @@
 
 		/* Estado inicial de las imágenes: ocultas y desplazadas */
 		.reveal-left,
-		.reveal-right {
-			/* opacity: 0; */
-			transform: translateX(-100px);
-			/* Para reveal-left; para reveal-right, usa translateX(100px); */
-			transition: opacity 0.6s ease, transform 0.6s ease;
-		}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
 
-		/* Estado final de las imágenes: visibles en su posición original */
-		.reveal-left.visible,
-		.reveal-right.visible {
-			opacity: 1;
-			transform: translateX(0);
-		}
+.reveal-left {
+  transform: translateX(-100px);
+}
+
+.reveal-right {
+  transform: translateX(100px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 		.flower_fondo {
 			position: absolute;
@@ -860,30 +890,8 @@
 	</style>
 
 
+  
 
-
-	<!--
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const sr = ScrollReveal({
-			distance: '100px',
-			duration: 600,
-			delay: 200,
-			reset: true
-		});
-
-		sr.reveal('.reveal-left', {
-			origin: 'left',
-			interval: 200
-		});
-
-		sr.reveal('.reveal-right', {
-			origin: 'right',
-			interval: 200
-		});
-	});
-</script> -->
 	<script>
 		// Controlador de las imágenes
 		let index = 0;
